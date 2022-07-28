@@ -1,0 +1,50 @@
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1%;
+}
+
+.footer {
+  height: 100px;
+  object-fit: contain;
+}
+
+.footerText {
+  align-self: center;
+  color: grey;
+}
+
+.sloganContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 900px;
+  font-size: 24px;
+  color: #de9e1f;
+  font-family: "BioRhyme", serif;
+}
+
+@media (max-width: 930px) {
+  .sloganContainer {
+    font-size: 16px;
+    justify-content: center;
+    width: 900px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 847px) {
+  .sloganContainer {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 410px) {
+  .sloganContainer {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,177 @@
+.vertFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2px;
+  text-align: left;
+}
+.vertContainerFlex {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.vertContainerFlex:hover {
+  box-shadow: 0px 16px 20px #00000029;
+}
+
+.galleryContainer {
+  width: 278px;
+  height: 290px;
+  background-color: white;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 20px;
+}
+
+.itemDetailsContainer {
+  padding: 6%;
+  font-size: 20px;
+  color: grey;
+  text-align: center;
+}
+
+.HomeSingleItemImage {
+  height: 158px;
+  object-fit: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.itemTitleMore {
+  font-size: 24px;
+  white-space: nowrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.popUp {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  background: rgb(48, 44, 44);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Baskerville", serif;
+}
+
+.popUpImage {
+  width: 600px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 20px;
+  z-index: 4;
+  position: relative;
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+.popUpImage:hover {
+  transition: opacity 1s;
+  opacity: 0.2;
+}
+
+.upperPopUpContent {
+  width: 600px;
+  height: 350px;
+}
+
+.popUpInnerContainer {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px 20px;
+}
+
+.popUpDescription {
+  color: white;
+  font-size: 1rem;
+  width: 90%;
+  text-align: center;
+  font-weight: 200;
+  z-index: 3;
+  position: relative;
+  bottom: 65%;
+  left: 5%;
+}
+.popUpTitle {
+  font-size: 2rem;
+  color: #de9e1f;
+}
+
+.popUpdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #de9e1f;
+}
+
+@media (max-width: 667px) {
+  .popUpImage {
+    width: 400px;
+  }
+
+  .upperPopUpContent {
+    width: 400px;
+    height: 350px;
+  }
+
+  .popUpInnerContainer {
+    width: 400px;
+  }
+
+  .popUpDescription {
+    font-size: 0.9rem;
+    bottom: 75%;
+  }
+}
+
+@media (max-width: 651px) {
+  .galleryContainer {
+    width: 430px;
+  }
+  .itemDetailsContainer {
+    padding: 3%;
+  }
+}
+
+@media (max-width: 481px) {
+  .galleryContainer {
+    width: 390px;
+  }
+
+  .popUpImage {
+    width: 340px;
+  }
+
+  .upperPopUpContent {
+    width: 340px;
+    height: 350px;
+  }
+
+  .popUpInnerContainer {
+    width: 340px;
+  }
+
+  .popUpDescription {
+    font-size: 0.8rem;
+    bottom: 75%;
+  }
+}
+
+@media (max-width: 418px) {
+  .galleryContainer {
+    width: 340px;
+  }
+}
+
+@media (max-width: 376px) {
+  .galleryContainer {
+    width: 310px;
+  }
+}

@@ -1,0 +1,410 @@
+.vertFlexHome {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.upperContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 78px;
+  font-size: 30px;
+  margin-bottom: 5%;
+}
+.titleInnerFlex {
+  direction: rtl;
+  /* justify-content: center; */
+  color: #de9e1f;
+  font-family: "Libre Baskerville", serif;
+  animation-duration: 2.7s;
+  animation-name: TitleContainer;
+  padding-bottom: 15%;
+}
+
+.HomeTitleText {
+  color: rgb(255, 255, 255);
+  font-family: monospace;
+  font-size: 40px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 12s steps(30, end), blink-caret 0.8s step-end infinite;
+  animation-delay: 2.5s;
+}
+
+/* The typing effect */
+
+.HomeTitleOverlay {
+  position: relative;
+  display: flex;
+  /* height: 200px; */
+  z-index: -1;
+  overflow: hidden;
+  direction: ltr;
+}
+
+.HomeContainer {
+  justify-content: center;
+  display: flex;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.HomeInnerContainer {
+  animation-duration: 2.6s;
+  animation-name: fade;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 100px 0px;
+  width: fit-content;
+  max-width: 700px;
+  padding-top: 12px;
+  padding-bottom: 78px;
+  z-index: 2;
+  flex-direction: row-reverse;
+}
+.introHeaderContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+
+  /* position: relative; */
+  /* animation-name: fade;
+  animation-duration: 2.6s; */
+}
+
+.profilePicContainer {
+  height: 30px;
+}
+@keyframes Profile {
+  0% {
+    opacity: 0;
+    padding: 0%;
+  }
+
+  100% {
+    opacity: 1;
+    padding: 20%;
+  }
+}
+
+.profilePic {
+  background-color: black;
+  border-radius: 50%;
+  height: 100px;
+  /* animation: ProfilePic 4s forwards; */
+  /* position: absolute;
+  left: 0px;
+  top: 0px; */
+}
+
+.introHeaderContainer {
+  display: flex;
+  /* height: 100px; */
+}
+
+.singleItem {
+  border-radius: 40px;
+  background-color: rgb(0, 0, 0);
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 16px 20px #00000029;
+  height: 400px;
+}
+
+.projectTitle {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 12%;
+}
+
+.frameworkLogoContainer {
+  position: relative;
+  top: -70px;
+  background-color: black;
+  padding: 4%;
+  border-radius: 50%;
+}
+.frameworkLogo {
+  height: 40px;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  position: relative;
+  bottom: -10px;
+}
+.logo {
+  height: 20px;
+}
+
+.singleItem:hover {
+  cursor: pointer;
+}
+
+@keyframes TitleContainer {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes Title {
+  0% {
+    font-size: 30px;
+
+    width: 0px;
+  }
+
+  50% {
+    width: 20px;
+  }
+  100% {
+    width: 90px;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+    margin-top: 4%;
+    /* margin-bottom: 0%; */
+  }
+
+  50% {
+    opacity: 0;
+    margin-top: 4%;
+    /* margin-bottom: 0%; */
+  }
+
+  75% {
+    opacity: 0.3;
+    margin-top: 0%;
+    /* margin-bottom: 4%; */
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0%;
+    /* margin-bottom: 4%; */
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+
+  5% {
+    width: 10%;
+  }
+
+  25% {
+    width: 10%;
+  }
+
+  45% {
+    width: 42%;
+  }
+  65% {
+    width: 42%;
+  }
+
+  100% {
+    width: 95%;
+  }
+}
+
+@keyframes blink-caret {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@media (max-width: 3000px) {
+  .HomeInnerContainerLessThanThree {
+    width: 1000px;
+  }
+  .HomeContainer {
+    max-width: 1202px;
+  }
+}
+
+@media (max-width: 1251px) {
+  .HomeTitleText {
+    font-size: 28px;
+  }
+  .HomeContainer {
+    max-width: 899px;
+  }
+}
+/* 
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+
+  5% {
+    width: 6%;
+  }
+
+  25% {
+    width: 6%;
+  }
+
+  45% {
+    width: 38%;
+  }
+  65% {
+    width: 38%;
+  }
+
+  100% {
+    width: 87%;
+  }
+} */
+
+@media (max-width: 990px) {
+  .HomeTitleText {
+    font-size: 20px;
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0%;
+    }
+
+    5% {
+      width: 8%;
+    }
+
+    25% {
+      width: 8%;
+    }
+
+    45% {
+      width: 41%;
+    }
+    65% {
+      width: 41%;
+    }
+
+    100% {
+      width: 96%;
+    }
+  }
+  .HomeContainer {
+    max-width: 590px;
+  }
+
+  .HomeInnerContainerLessThanThree {
+    max-width: 790px;
+  }
+}
+
+@media (max-width: 993px) {
+  .HomeInnerContainer {
+    margin-bottom: 30px;
+  }
+  .moreIcon {
+    width: 23px;
+    margin-bottom: 290px;
+  }
+}
+
+@media (max-width: 651px) {
+  .HomeTitleText {
+    font-size: 16px;
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0%;
+    }
+
+    5% {
+      width: 8%;
+    }
+
+    25% {
+      width: 8%;
+    }
+
+    45% {
+      width: 41%;
+    }
+    65% {
+      width: 41%;
+    }
+
+    100% {
+      width: 96%;
+    }
+  }
+  .HomeInnerContainer {
+    justify-content: center;
+  }
+
+  .HomeContainer {
+    max-width: 360px;
+  }
+
+  .titleInnerFlex {
+    align-self: center;
+  }
+}
+
+@media (max-width: 483px) {
+  .HomeTitleText {
+    font-size: 13px;
+  }
+}
+@media (max-width: 428px) {
+  .HomeInnerContainer {
+    margin-bottom: 30px;
+  }
+
+  .HomeTitleText {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 374px) {
+  .HomeTitleText {
+    font-size: 11px;
+  }
+}
