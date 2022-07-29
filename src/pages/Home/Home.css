@@ -6,17 +6,12 @@
   flex-grow: 1;
 }
 
-.upperContent {
-  display: flex;
-  flex-direction: column;
-}
-
 .titleFlex {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding-top: 78px;
+  padding-top: 30px;
   font-size: 30px;
   margin-bottom: 5%;
 }
@@ -27,7 +22,13 @@
   font-family: "Libre Baskerville", serif;
   animation-duration: 2.7s;
   animation-name: TitleContainer;
-  padding-bottom: 15%;
+  padding-bottom: 7%;
+  margin-top: 5%;
+}
+
+.personalMessage {
+  font-size: 22px;
+  color: white;
 }
 
 .HomeTitleText {
@@ -55,8 +56,12 @@
 }
 
 .HomeContainer {
-  justify-content: center;
+  animation-duration: 2.6s;
+  animation-name: fade;
+  justify-content: space-between;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   opacity: 1;
   transition: opacity 1s;
 }
@@ -65,11 +70,25 @@
   animation-duration: 2.6s;
   animation-name: fade;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 100px 0px;
   width: fit-content;
-  max-width: 700px;
+  /* max-width: 700px; */
+  padding-top: 12px;
+  padding-bottom: 78px;
+  z-index: 2;
+  flex-direction: row-reverse;
+}
+
+.projectGalleryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 100px 10px;
+  width: 1150px;
+  /* max-width: 700px; */
   padding-top: 12px;
   padding-bottom: 78px;
   z-index: 2;
@@ -77,16 +96,25 @@
 }
 .introHeaderContainer {
   display: flex;
-  justify-content: space-around;
-  width: 400px;
+  justify-content: center;
+  background-color: #390c0c;
+  width: 100vw;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 8%;
+  opacity: 0.8;
+}
 
-  /* position: relative; */
-  /* animation-name: fade;
-  animation-duration: 2.6s; */
+.introInnerHeaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  gap: 25px;
 }
 
 .profilePicContainer {
-  height: 30px;
+  height: 143px;
 }
 @keyframes Profile {
   0% {
@@ -103,16 +131,12 @@
 .profilePic {
   background-color: black;
   border-radius: 50%;
-  height: 100px;
+  height: 140px;
+  border: 2px solid black;
   /* animation: ProfilePic 4s forwards; */
   /* position: absolute;
   left: 0px;
   top: 0px; */
-}
-
-.introHeaderContainer {
-  display: flex;
-  /* height: 100px; */
 }
 
 .singleItem {
@@ -132,6 +156,13 @@
   text-align: center;
   position: relative;
   top: 12%;
+  font-size: 20px;
+}
+
+.titleText {
+  color: white;
+  font-size: 60px;
+  margin-bottom: 12%;
 }
 
 .frameworkLogoContainer {

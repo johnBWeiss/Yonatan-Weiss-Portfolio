@@ -1,0 +1,58 @@
+.projectGalleryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 100px 10px;
+  width: 1050px;
+  /* max-width: 700px; */
+  padding-top: 12px;
+  padding-bottom: 78px;
+  z-index: 2;
+  flex-direction: row-reverse;
+}
+
+.singleItem {
+  border-radius: 40px;
+  background-color: rgb(0, 0, 0);
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 16px 20px #00000029;
+  height: 400px;
+}
+
+.projectTitle {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 12%;
+  font-size: 20px;
+}
+
+.frameworkLogoContainer {
+  position: relative;
+  top: -70px;
+  background-color: black;
+  padding: 4%;
+  border-radius: 50%;
+}
+.frameworkLogo {
+  height: 40px;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  position: relative;
+  bottom: -10px;
+}
+.logo {
+  height: 20px;
+}
+
+.singleItem:hover {
+  cursor: pointer;
+}
