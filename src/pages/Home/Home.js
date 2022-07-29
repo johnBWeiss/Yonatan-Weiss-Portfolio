@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, useRef } from "react";
 import './Home.css';
 import HomeSingleItem from '../../components/HomeSingleItem/HomeSingleProject/HomeSingleItem';
 import Footer from '../../components/Footer/Footer'
@@ -8,8 +8,46 @@ import LogoHeader from '../../components/LogoHeader/LogoHeader';
 import { Projects } from '../Projects/Projects';
 
 const HomeContainer = () => {
-    // const slicedMock = mockData.splice(4)
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const [showProjects, setShowProjects] = useState(false);
+    const [myProjectsEffect, setMyProjectsEffect] = useState('noShowProjects');
 
+    const myProjects = useRef(null)
+
+
+
+
+
+
+    const handleScroll = () => {
+        const position = window.pageYOffset;
+        setScrollPosition(position);
+        if (
+            window.innerHeight + window.scrollY + 0.5 >=
+            document.body.offsetHeight
+        ) {
+        }
+        if (
+            window.scrollY >=
+            myProjects.current.offsetHeight
+        ) {
+            setShowProjects(true)
+            setMyProjectsEffect('showProjects')
+        }
+
+        else {
+            setShowProjects(false)
+        }
+
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     return (
         <div className='vertFlexHome'>
 
@@ -44,9 +82,11 @@ const HomeContainer = () => {
 
                 </div>
 
-                <div className='titleText'>My Projects</div>
-                <Projects />
-
+                <div className='titleText' ref={myProjects}>My Projects {scrollPosition}</div>
+                {showProjects &&
+                    <div className={myProjectsEffect}>
+                        <Projects /></div>
+                }
             </div>
         </div>
     );

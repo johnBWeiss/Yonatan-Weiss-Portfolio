@@ -33,6 +33,7 @@
 
 .HomeTitleText {
   color: rgb(255, 255, 255);
+  opacity: 0;
   font-family: monospace;
   font-size: 40px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -191,14 +192,22 @@
   cursor: pointer;
 }
 
-@keyframes TitleContainer {
+.noShowProjects {
+  height: 60vh;
+}
+.showProjects {
+  animation: showProjects;
+  animation-duration: 1s;
+}
+
+@keyframes showProjects {
   0% {
+    transform: scale(0%);
     opacity: 0;
   }
-  99% {
-    opacity: 0;
-  }
+
   100% {
+    transform: scale(100%);
     opacity: 1;
   }
 }
@@ -279,6 +288,8 @@
 
 @keyframes blink-caret {
   0% {
+    opacity: 1;
+
     border-color: transparent;
   }
   50% {
