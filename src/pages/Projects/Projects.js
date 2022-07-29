@@ -1,10 +1,14 @@
 import React from 'react'
 import videosList from '../../assets/videos/videos'
-import github from '../../assets/images/logos/logoPortfolio.png'
+import logos from '../../assets/images/logos'
+
+
 import ReactPlayer from "react-player"
 import './Projects.css'
 
 export const Projects = () => {
+
+    const { linkedIn, github, mail } = logos
     return (
         <div className='projectGalleryContainer'>
 
@@ -15,8 +19,8 @@ export const Projects = () => {
                     <div className='frameworkLogoContainer'>
                         <img
                             className='frameworkLogo'
-                            src={github}
-                            title='github'
+                            src={v.logo}
+                            title='logo'
 
                             alt="github" /></div>
                     <ReactPlayer url={v.src} playing={true}

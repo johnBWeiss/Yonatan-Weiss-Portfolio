@@ -28,7 +28,7 @@ const HomeContainer = () => {
         ) {
         }
         if (
-            window.scrollY >=
+            window.scrollY + 15 >=
             myProjects.current.offsetHeight
         ) {
             setShowProjects(true)
@@ -82,7 +82,7 @@ const HomeContainer = () => {
 
                 </div>
 
-                <div className='titleText' ref={myProjects}>My Projects {scrollPosition}</div>
+                <div className='titleText' ref={myProjects}>My Projects</div>
                 {showProjects &&
                     <div className={myProjectsEffect}>
                         <Projects /></div>

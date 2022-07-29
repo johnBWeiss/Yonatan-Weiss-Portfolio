@@ -2,8 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 100px 10px;
-  width: 1050px;
+  gap: 90px 0px;
+  width: 1250px;
   /* max-width: 700px; */
   padding-top: 12px;
   padding-bottom: 78px;
@@ -20,26 +20,28 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0px 16px 20px #00000029;
-  height: 400px;
+  height: 340px;
+  background-image: url("../../assets/images/projectBackground.jpg");
 }
 
 .projectTitle {
   color: white;
   text-align: center;
   position: relative;
-  top: 12%;
-  font-size: 20px;
+  top: 18%;
+  font-size: 22px;
+  word-break: break-all;
 }
 
 .frameworkLogoContainer {
   position: relative;
   top: -70px;
-  background-color: black;
+  background-image: url("../../assets/images/projectBackground.jpg");
   padding: 4%;
   border-radius: 50%;
 }
 .frameworkLogo {
-  height: 40px;
+  height: 60px;
 }
 
 .logoContainer {

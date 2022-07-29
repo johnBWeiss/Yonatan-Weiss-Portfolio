@@ -1,7 +1,7 @@
 .headerContainer {
   display: flex;
   justify-content: center;
-  height: 90px;
+  height: 120px;
   font-size: 1.6rem;
   flex-shrink: 0;
   font-family: "BioRhyme", serif;
@@ -24,10 +24,10 @@
     transform: translateX(0);
   }
 }
-.workshopHeader {
+.logoContainerHeader {
   color: "#6c6e71";
   display: flex;
-  gap: 18px;
+  gap: 100px;
   align-items: center;
 }
 .workshopHeader:hover {

@@ -1,13 +1,13 @@
 import React from 'react';
 import './LogoHeader.css';
 import threeLines from '../../assets/images/threeLines.png'
-import logo from '../../assets/images/logos/2.jpg'
+import logos from "../../assets/images/logos";
 
 import { useNavigate } from 'react-router-dom';
 
 
 const LogoHeader = () => {
-
+  const { linkedIn, github, mail } = logos
   const navigate = useNavigate();
 
   const navLogin = () => {
@@ -17,21 +17,21 @@ const LogoHeader = () => {
   return (
     <div className='headerContainer'>
       <div className='headerInnerWidth'>
-        <div className='workshopHeader'>
+        <div className='logoContainerHeader'>
           <img
             onClick={navLogin}
-            src={logo}
+            src={linkedIn}
             alt="logo"
             className='headerLogo'
           />
           <img
             onClick={navLogin}
-            src={logo}
+            src={github}
             alt="logo"
             className='headerLogo'
           />   <img
             onClick={navLogin}
-            src={logo}
+            src={mail}
             alt="logo"
             className='headerLogo'
           />

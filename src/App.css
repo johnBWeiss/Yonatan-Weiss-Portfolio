@@ -1,9 +1,10 @@
 .app {
   text-align: center;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
 
   /* position: fixed;
   left: 0px;
