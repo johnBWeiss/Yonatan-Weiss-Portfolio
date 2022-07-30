@@ -6,11 +6,16 @@ import { mockData } from '../../mockData/mockData';
 import profilePic from '../../assets/images/logos/logoPortfolio.png'
 import LogoHeader from '../../components/LogoHeader/LogoHeader';
 import { Projects } from '../Projects/Projects';
+import openingParagraph from '../../assets/text/text'
+import downArrow from '../../assets/images/logos/downArrow.png'
 
 const HomeContainer = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
     const [showProjects, setShowProjects] = useState(false);
     const [myProjectsEffect, setMyProjectsEffect] = useState('noShowProjects');
+    const [openingText, setOpeningText] = useState(openingParagraph[0]);
+    const [openingTextClass, setOpeningTextClass] = useState(true);
+    const [count, setCount] = useState(0);
 
     const myProjects = useRef(null)
 
@@ -48,6 +53,20 @@ const HomeContainer = () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCount((prevCount) => prevCount + 1)
+            setOpeningTextClass((prevClass) => !prevClass)
+        }, 7500);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    if (count === openingParagraph.length) {
+        setCount(0)
+    }
+
     return (
         <div className='vertFlexHome'>
 
@@ -70,18 +89,14 @@ const HomeContainer = () => {
 
                                 alt="profile" />
                         </div>
-                        <div className='personalMessage'>Let's talk!
-                            I can build end to end web applications
-                            for your company with the latest tech, and as
-                            a bonus you will get a hard working,funny,
-                            loyal and supportive team member. You are more than welcome to have a look around. Enjoy!
+                        <div className={openingTextClass ? 'personalMessage' : 'emptyPersonalMessage'}>{openingParagraph[count]}
 
                         </div>
 
                     </div>
 
                 </div>
-
+                <img className="downArrow" src={downArrow} />
                 <div className='titleText' ref={myProjects}>My Projects</div>
                 {showProjects &&
                     <div className={myProjectsEffect}>

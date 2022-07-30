@@ -27,8 +27,54 @@
 }
 
 .personalMessage {
-  font-size: 22px;
+  font-size: 34px;
   color: white;
+  animation: personalMessageOdd 6.5s;
+}
+.emptyPersonalMessage {
+  font-size: 34px;
+  color: white;
+  animation: personalMessageEven 7.5s;
+}
+@keyframes personalMessageEven {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes personalMessageOdd {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .HomeTitleText {
@@ -41,7 +87,8 @@
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 12s steps(30, end), blink-caret 0.8s step-end infinite;
+  animation: typing 14s steps(30, end) infinite,
+    blink-caret 0.8s step-end infinite;
   animation-delay: 2.5s;
 }
 
@@ -200,42 +247,47 @@
   animation-duration: 1s;
 }
 
+.downArrow {
+  color: white;
+  margin-bottom: 8%;
+  opacity: 0;
+  height: 50px;
+  animation: downArrow 1.4s linear 2s infinite none;
+  position: relative;
+  top: -50px;
+}
+
+@keyframes downArrow {
+  0% {
+    top: -50px;
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.095;
+  }
+  100% {
+    top: 20px;
+    opacity: 0;
+  }
+}
+
 @keyframes showProjects {
   0% {
     transform: scale(0%);
     opacity: 0;
   }
-
+  60% {
+    opacity: 0.5;
+  }
   100% {
     transform: scale(100%);
     opacity: 1;
   }
 }
 
-@keyframes reveal {
-  0% {
-    transform: translateX(0%);
-  }
-
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-@keyframes Title {
-  0% {
-    font-size: 30px;
-
-    width: 0px;
-  }
-
-  50% {
-    width: 20px;
-  }
-  100% {
-    width: 90px;
-  }
-}
 @keyframes fade {
   0% {
     opacity: 0;
@@ -280,9 +332,11 @@
   65% {
     width: 42%;
   }
-
+  90% {
+    width: 100%;
+  }
   100% {
-    width: 95%;
+    width: 100%;
   }
 }
 

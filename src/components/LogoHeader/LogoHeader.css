@@ -8,9 +8,7 @@
 }
 
 .headerInnerWidth {
-  animation-name: slideInFromLeft;
-  animation-duration: 1.3s;
-  animation-timing-function: ease-in;
+  animation: slideInFromLeft 1.3s ease-in 0s 1 none;
   width: 88.75vw;
   display: flex;
   justify-content: center;
@@ -24,6 +22,7 @@
     transform: translateX(0);
   }
 }
+
 .logoContainerHeader {
   color: "#6c6e71";
   display: flex;
@@ -36,27 +35,34 @@
 
 .headerLogo {
   height: 42px;
-  animation-name: rocked;
-  animation-duration: 0.9s;
-  animation-delay: 1.25s;
+  animation: rocked 0.9s linear 1.25s 1 forwards, logoRoll 1.2s linear 0s 1 none;
 }
 
 @keyframes rocked {
   0% {
     transform: translateX(10);
-    transform: rotate(20deg);
+    transform: rotate(30deg);
   }
   10% {
     transform: translateX(10);
-    transform: rotate(20deg);
+    transform: rotate(30deg);
   }
 
   50% {
     transform: translateX(-10);
-    transform: rotate(-15deg);
+    transform: rotate(-20deg);
   }
   100% {
     transform: translateX(0);
     transform: rotate(0deg);
+  }
+}
+
+@keyframes logoRoll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(3600deg);
   }
 }
