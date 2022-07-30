@@ -28,20 +28,20 @@
   color: white;
   text-align: center;
   position: relative;
-  top: 18%;
-  font-size: 22px;
+  top: 22%;
+  font-size: 30px;
   word-break: break-all;
 }
 
 .frameworkLogoContainer {
   position: relative;
-  top: -70px;
-  background-image: url("../../assets/images/projectBackground.jpg");
+  top: -19%;
   padding: 4%;
   border-radius: 50%;
 }
 .frameworkLogo {
-  height: 60px;
+  height: 50px;
+  font-family: "Libre Baskerville", serif;
 }
 
 .logoContainer {

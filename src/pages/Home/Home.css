@@ -29,7 +29,7 @@
 .personalMessage {
   font-size: 34px;
   color: white;
-  animation: personalMessageOdd 6.5s;
+  animation: personalMessageOdd 7.5s;
 }
 .emptyPersonalMessage {
   font-size: 34px;
@@ -80,7 +80,7 @@
 .HomeTitleText {
   color: rgb(255, 255, 255);
   opacity: 0;
-  font-family: monospace;
+  font-family: "Roboto", sans-serif;
   font-size: 40px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid orange; /* The typwriter cursor */
@@ -239,12 +239,14 @@
   cursor: pointer;
 }
 
-.noShowProjects {
+/* .noShowProjects {
   height: 60vh;
-}
+} */
 .showProjects {
+  opacity: 0;
   animation: showProjects;
-  animation-duration: 1s;
+  animation-duration: 1.1s;
+  animation-fill-mode: forwards;
 }
 
 .downArrow {
@@ -259,7 +261,7 @@
 
 @keyframes downArrow {
   0% {
-    top: -50px;
+    top: -70px;
     opacity: 0.8;
   }
   50% {
@@ -269,7 +271,7 @@
     opacity: 0.095;
   }
   100% {
-    top: 20px;
+    top: -10px;
     opacity: 0;
   }
 }

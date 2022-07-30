@@ -1,27 +1,21 @@
 import React, { useEffect, useState, useRef } from "react";
 import './Home.css';
-import HomeSingleItem from '../../components/HomeSingleItem/HomeSingleProject/HomeSingleItem';
-import Footer from '../../components/Footer/Footer'
-import { mockData } from '../../mockData/mockData';
 import profilePic from '../../assets/images/logos/logoPortfolio.png'
 import LogoHeader from '../../components/LogoHeader/LogoHeader';
-import { Projects } from '../Projects/Projects';
+import { Projects } from '../../components/Projects/Projects';
 import openingParagraph from '../../assets/text/text'
 import downArrow from '../../assets/images/logos/downArrow.png'
 
 const HomeContainer = () => {
+
     const [scrollPosition, setScrollPosition] = useState(0);
     const [showProjects, setShowProjects] = useState(false);
+    const [showMore, setShowMore] = useState(true);
+
     const [myProjectsEffect, setMyProjectsEffect] = useState('noShowProjects');
-    const [openingText, setOpeningText] = useState(openingParagraph[0]);
     const [openingTextClass, setOpeningTextClass] = useState(true);
     const [count, setCount] = useState(0);
-
     const myProjects = useRef(null)
-
-
-
-
 
 
     const handleScroll = () => {
@@ -31,17 +25,25 @@ const HomeContainer = () => {
             window.innerHeight + window.scrollY + 0.5 >=
             document.body.offsetHeight
         ) {
-        }
-        if (
-            window.scrollY + 15 >=
-            myProjects.current.offsetHeight
-        ) {
             setShowProjects(true)
             setMyProjectsEffect('showProjects')
+            setShowMore(false)
+
         }
+
+        // if (
+        //     window.scrollY + 20 >=
+        //     myProjects.current.offsetHeight
+        // ) {
+        //     setShowProjects(true)
+
+        //     setMyProjectsEffect('showProjects')
+        // }
 
         else {
             setShowProjects(false)
+            setShowMore(true)
+
         }
 
     };
@@ -96,8 +98,8 @@ const HomeContainer = () => {
                     </div>
 
                 </div>
-                <img className="downArrow" src={downArrow} />
-                <div className='titleText' ref={myProjects}>My Projects</div>
+                {showMore && <img className="downArrow" src={downArrow} />}
+                {!showMore && <div className='titleText' ref={myProjects}>My Projects</div>}
                 {showProjects &&
                     <div className={myProjectsEffect}>
                         <Projects /></div>
