@@ -91,7 +91,8 @@ const HomeContainer = () => {
 
                                 alt="profile" />
                         </div>
-                        <div className={openingTextClass ? 'personalMessage' : 'emptyPersonalMessage'}>{openingParagraph[count]}
+                        <div className={openingTextClass ? 'personalMessage' : 'emptyPersonalMessage'}>
+                            {openingParagraph[count]}
 
                         </div>
 
@@ -99,7 +100,7 @@ const HomeContainer = () => {
 
                 </div>
                 {showMore && <img className="downArrow" src={downArrow} />}
-                {!showMore && <div className='titleText' ref={myProjects}>My Projects</div>}
+                {!showMore && <div className={`titleText ${myProjectsEffect}`} ref={myProjects}>My Projects</div>}
                 {showProjects &&
                     <div className={myProjectsEffect}>
                         <Projects /></div>

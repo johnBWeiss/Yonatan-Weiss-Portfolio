@@ -30,11 +30,14 @@
   font-size: 34px;
   color: white;
   animation: personalMessageOdd 7.5s;
+  animation-iteration-count: infinite;
 }
+
 .emptyPersonalMessage {
   font-size: 34px;
   color: white;
   animation: personalMessageEven 7.5s;
+  animation-iteration-count: infinite;
 }
 @keyframes personalMessageEven {
   0% {
@@ -130,18 +133,6 @@
   flex-direction: row-reverse;
 }
 
-.projectGalleryContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 100px 10px;
-  width: 1150px;
-  /* max-width: 700px; */
-  padding-top: 12px;
-  padding-bottom: 78px;
-  z-index: 2;
-  flex-direction: row-reverse;
-}
 .introHeaderContainer {
   display: flex;
   justify-content: center;
@@ -180,11 +171,7 @@
   background-color: black;
   border-radius: 50%;
   height: 140px;
-  border: 2px solid black;
-  /* animation: ProfilePic 4s forwards; */
-  /* position: absolute;
-  left: 0px;
-  top: 0px; */
+  border: 4px solid black;
 }
 
 .singleItem {
@@ -208,40 +195,16 @@
 }
 
 .titleText {
-  color: white;
-  font-size: 60px;
-  margin-bottom: 12%;
-}
-
-.frameworkLogoContainer {
-  position: relative;
-  top: -70px;
-  background-color: black;
-  padding: 4%;
-  border-radius: 50%;
-}
-.frameworkLogo {
-  height: 40px;
-}
-
-.logoContainer {
-  display: flex;
-  justify-content: space-around;
-  width: 70%;
-  position: relative;
-  bottom: -10px;
-}
-.logo {
-  height: 20px;
+  color: rgb(255, 225, 58);
+  font-size: 150px;
+  margin-bottom: 10%;
+  font-family: enchanted land;
 }
 
 .singleItem:hover {
   cursor: pointer;
 }
 
-/* .noShowProjects {
-  height: 60vh;
-} */
 .showProjects {
   opacity: 0;
   animation: showProjects;
@@ -250,11 +213,10 @@
 }
 
 .downArrow {
-  color: white;
   margin-bottom: 8%;
   opacity: 0;
   height: 50px;
-  animation: downArrow 1.4s linear 2s infinite none;
+  animation: downArrow 1.4s linear 0s infinite none;
   position: relative;
   top: -50px;
 }

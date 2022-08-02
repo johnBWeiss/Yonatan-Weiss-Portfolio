@@ -8,8 +8,8 @@ import JsLogo from '../../assets/images/logos/js.png'
 import vueLogo from '../../assets/images/logos/vue.png'
 
 
-const videosList = [{ src: cinema, title: 'Cinema', logo: angularLogo },
-{ src: Musixx, title: 'Musixx', logo: reactLogo },
-{ src: Phoogle, title: 'Phoogle', logo: vueLogo },
-{ src: TITANWAR, title: 'TitanWar', logo: JsLogo }];
+const videosList = [{ src: cinema, title: 'Cinema', logo: angularLogo, live: true },
+{ src: Musixx, title: 'Musixx', logo: reactLogo, live: false },
+{ src: Phoogle, title: 'Phoogle', logo: vueLogo, live: false },
+{ src: TITANWAR, title: 'TitanWar', logo: JsLogo, live: false }];
 export default videosList 

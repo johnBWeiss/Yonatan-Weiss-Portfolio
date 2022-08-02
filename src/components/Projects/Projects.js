@@ -8,7 +8,7 @@ import './Projects.css'
 
 export const Projects = () => {
 
-    const { linkedIn, github, mail } = logos
+    const { linkedIn, github, mail, info, live } = logos
     return (
         <div className='projectGalleryContainer'>
 
@@ -25,22 +25,28 @@ export const Projects = () => {
                             alt="github" /></div>
                     <ReactPlayer url={v.src} playing={true}
                         loop={true} controls={true}
-                        muted={true} width={'18vw'}  ></ReactPlayer>
-                    <div className='logoContainer'> <img
-                        className='logo'
-                        src={github}
-                        title='github'
+                        muted={true} width={'100%'} ></ReactPlayer>
+                    <div className='logoContainer'>
 
-                        alt="github" /> <img
+                        <img
                             className='logo'
                             src={github}
                             title='github'
-                            alt="github" /> <img
-                            className='logo'
-                            src={github}
-                            title='github'
+                            alt="github" />
 
-                            alt="github" /></div>
+                        {v.live && <img
+                            className='logo'
+                            src={live}
+                            title='Live'
+                            alt="Live" />}
+
+
+                        <img
+                            className='logo'
+                            src={info}
+                            title='info'
+                            alt="info" />
+                    </div>
                 </div>
             )
 
