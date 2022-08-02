@@ -8,11 +8,12 @@ import vue from '../../assets/images/logos/vue.png'
 import mail from '../../assets/images/logos/mail.png'
 import info from '../../assets/images/logos/info.jpg'
 import live from '../../assets/images/logos/live.png'
+import CV from '../../assets/images/logos/CV.png'
 
 
 
 const logos = {
-    github, server, linkedIn, react, js, angular, vue, mail, info, live
+    github, server, linkedIn, react, js, angular, vue, mail, info, live, CV
 
 }
 

@@ -22,8 +22,8 @@
   font-family: "Libre Baskerville", serif;
   animation-duration: 2.7s;
   animation-name: TitleContainer;
-  padding-bottom: 7%;
-  margin-top: 5%;
+  padding-bottom: 4%;
+  margin-top: 2%;
 }
 
 .personalMessage {
@@ -31,6 +31,7 @@
   color: white;
   animation: personalMessageOdd 7.5s;
   animation-iteration-count: infinite;
+  min-width: 30vw;
 }
 
 .emptyPersonalMessage {
@@ -38,6 +39,7 @@
   color: white;
   animation: personalMessageEven 7.5s;
   animation-iteration-count: infinite;
+  min-width: 30vw;
 }
 @keyframes personalMessageEven {
   0% {
@@ -136,42 +138,28 @@
 .introHeaderContainer {
   display: flex;
   justify-content: center;
-  background-color: #390c0c;
+  align-items: center;
+  /* background-image: url("../../assets/images/BackgroundStripes.png"); */
+  background-color: black;
   width: 100vw;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  border-radius: 30px;
+  padding-top: 3%;
+  padding-bottom: 3%;
   margin-bottom: 8%;
-  opacity: 0.8;
 }
 
 .introInnerHeaderContainer {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 70%;
-  gap: 25px;
-}
-
-.profilePicContainer {
-  height: 143px;
-}
-@keyframes Profile {
-  0% {
-    opacity: 0;
-    padding: 0%;
-  }
-
-  100% {
-    opacity: 1;
-    padding: 20%;
-  }
+  gap: 5px;
 }
 
 .profilePic {
-  background-color: black;
+  /* background-color: black; */
   border-radius: 50%;
-  height: 140px;
-  border: 4px solid black;
+  height: 240px;
 }
 
 .singleItem {
@@ -215,8 +203,8 @@
 .downArrow {
   margin-bottom: 8%;
   opacity: 0;
-  height: 50px;
-  animation: downArrow 1.4s linear 0s infinite none;
+  height: 80px;
+  animation: downArrow 1.2s linear 0s infinite none;
   position: relative;
   top: -50px;
 }
@@ -224,14 +212,14 @@
 @keyframes downArrow {
   0% {
     top: -70px;
-    opacity: 0.8;
+    opacity: 1;
   }
-  50% {
-    opacity: 0.4;
-  }
-  90% {
+  /* 50% {
+    opacity: 0.7;
+  } */
+  /* 90% {
     opacity: 0.095;
-  }
+  } */
   100% {
     top: -10px;
     opacity: 0;
@@ -283,11 +271,11 @@
   }
 
   5% {
-    width: 10%;
+    width: 8%;
   }
 
   25% {
-    width: 10%;
+    width: 8%;
   }
 
   45% {

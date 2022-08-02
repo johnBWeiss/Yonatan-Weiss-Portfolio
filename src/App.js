@@ -1,9 +1,9 @@
 import './App.css';
 import Login from './pages/Login/Login'
 import Home from './pages/Home/Home';
-import Header from './components/Header/Header';
 import LogoHeader from './components/LogoHeader/LogoHeader';
-import background from './assets/images/bannerImage1.jpg'
+// import background from './assets/images/bannerImage1.jpg'
+import background from './assets/images/BackgroundStripes.png'
 
 
 
@@ -22,8 +22,8 @@ const App = () => {
 
       <Router>
         <Routes>
-          <Route exact path="/" element={<Login />} />
-          <Route exact path="/home" element={<Home />} />
+          {/* <Route exact path="/" element={<Login />} /> */}
+          <Route exact path="/" element={<Home />} />
         </Routes>
       </Router>
     </div>

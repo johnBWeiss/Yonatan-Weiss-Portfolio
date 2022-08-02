@@ -26,16 +26,24 @@
 .logoContainerHeader {
   color: "#6c6e71";
   display: flex;
-  gap: 100px;
+  justify-content: space-between;
+  width: 500px;
+  /* gap: 100px;
   align-items: center;
-}
-.workshopHeader:hover {
-  cursor: pointer;
+  max-width: 30vw; */
 }
 
 .headerLogo {
   height: 42px;
-  animation: rocked 0.9s linear 1.25s 1 forwards, logoRoll 1.2s linear 0s 1 none;
+  animation: rocked 0.9s linear 1.25s 1 none, logoRoll 1.2s linear 0s 1 none;
+  transition: transform 0.2s;
+  border-radius: 50%;
+}
+
+.headerLogo:hover {
+  /* box-sizing: border-box; */
+  transform: scale(150%);
+  transition: transform 0.2s;
 }
 
 @keyframes rocked {
