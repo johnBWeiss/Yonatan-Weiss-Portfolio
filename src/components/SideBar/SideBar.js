@@ -2,22 +2,22 @@ import React from 'react'
 import logos from '../../assets/images/logos'
 import './SideBar.css'
 
-const { github, linkedIn, tech, home } = logos
+const { home, linkedIn, github, tech } = logos
 
 const logoArray = [github, linkedIn, tech, home]
 
-
-export const SideBar = () => {
+// 'singleSideBar'
+export const SideBar = (animation) => {
     return (
-        <div className='sideBarContainer'>
-            {logoArray.map((v) => (<div className='singleSideBar'>
+        <div className={`${animation.class}`}>
+            {logoArray.map((v) => (<div className={animation.footer ? 'singleFooterSideBar' : 'singleSideBar'}>
                 <img
                     className='sideBarLogo'
                     src={v.src}
                     title=''
                     alt="" />
-                <div className='sideBarTitle'>{v.title}</div>
-            </div>))
+                {!animation.footer && <div className='sideBarTitle'>{v.title}</div>
+                }            </div>))
             }
 
         </div>

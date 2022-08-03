@@ -29,7 +29,7 @@ const logos = {
     html: { src: html, title: 'HTML5' },
     redux: { src: redux, title: 'Redux-Toolkit' }, mongo: { src: mongo, title: 'MongoDB' },
     vuetify: { src: vuetify, title: 'Vuetify' }, github: { src: github, title: 'Github' },
-    server, linkedIn: { src: linkedIn, title: 'Linkedin' }, linkedIn, react: { src: react, title: 'React' }, JS: { src: JS, title: 'JavaScript' }, angular, vue: { src: vue, title: 'Vue' }, mail, info, live, CV
+    server, linkedIn: { src: linkedIn, title: 'Linkedin' }, react: { src: react, title: 'React' }, JS: { src: JS, title: 'JavaScript' }, angular, vue: { src: vue, title: 'Vue' }, mail, info, live, CV
 
 }
 

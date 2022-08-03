@@ -29,7 +29,7 @@ const LogoHeader = () => {
           >
             <img
               onClick={navLogin}
-              src={linkedIn}
+              src={linkedIn.src}
               alt="linkedin"
               className='headerLogo'
             />

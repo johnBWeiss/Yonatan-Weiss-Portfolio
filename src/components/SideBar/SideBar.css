@@ -1,14 +1,41 @@
 .sideBarContainer {
   display: flex;
   flex-direction: column;
-  width: 200px;
-  height: 400px;
+  width: 20px;
+  height: 0px;
   background-color: black;
   align-items: center;
   border-radius: 30px;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3.5%;
+  padding-bottom: 3.5%;
   justify-content: space-between;
+  position: fixed;
+  top: 25vh;
+  left: 4%;
+  animation: sideBar 1.2s linear 0s 1 forwards;
+}
+
+.noShowSideBar {
+  display: none;
+}
+
+@keyframes sideBar {
+  0% {
+    height: 0px;
+    width: 20px;
+    transform: translateX(-100%);
+  }
+
+  50% {
+    height: 400px;
+    width: 20px;
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: translateX(0);
+    width: 200px;
+    height: 400px;
+  }
 }
 
 .singleSideBar {
@@ -22,6 +49,30 @@
 }
 
 .sideBarTitle {
-  color: white;
+  color: black;
   align-self: center;
+  width: 60px;
+  animation: sideBarTitle 2.5s ease-in 0s 1 forwards;
+}
+
+@keyframes sideBarTitle {
+  0% {
+    display: none;
+    color: black;
+  }
+  100% {
+    display: inline;
+    color: white;
+  }
+}
+
+.sideBarFooter {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 50vw;
+  align-items: center;
+  border-radius: 30px;
+  padding-top: 3.5%;
+  padding-bottom: 3.5%;
+  justify-content: space-between;
 }

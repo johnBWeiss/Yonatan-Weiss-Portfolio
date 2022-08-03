@@ -15,14 +15,21 @@ const HomeContainer = () => {
     const [showMore, setShowMore] = useState(true);
 
     const [myProjectsEffect, setMyProjectsEffect] = useState('noShowProjects');
+    const [sideBarClass, setSideBarClass] = useState('noShowSideBar');
     const [openingTextClass, setOpeningTextClass] = useState(true);
     const [count, setCount] = useState(0);
     const myProjects = useRef(null)
+    const RefStack = useRef(null)
+    console.log(RefStack);
 
 
     const handleScroll = () => {
         const position = window.pageYOffset;
         setScrollPosition(position);
+        console.log(RefStack.current?.offsetHeight);
+        console.log(window.scrollY);
+
+
         if (
             window.innerHeight + window.scrollY + 0.5 >=
             document.body.offsetHeight
@@ -30,11 +37,30 @@ const HomeContainer = () => {
             setShowProjects(true)
             setMyProjectsEffect('showProjects')
             setShowMore(false)
+            // setSideBarClass('sideBarContainer')
         }
         else {
             setShowProjects(false)
             setShowMore(true)
         }
+
+        if (
+            window.scrollY + 400 >=
+            myProjects.current?.offsetTop
+        ) {
+            setSideBarClass('sideBarContainer')
+
+        }
+
+        if (
+            window.scrollY + 450 >=
+            RefStack.current?.offsetTop
+        ) {
+            setSideBarClass('noShowSideBar')
+
+        }
+
+
 
     };
 
@@ -90,14 +116,15 @@ const HomeContainer = () => {
                     </div>
                 }
                 {<div className={`titleText ${myProjectsEffect}`} ref={myProjects}>My Posts</div>}
-                {<div className={`titleText ${myProjectsEffect}`} ref={myProjects}>My Stack</div>}
+                {<div className={`titleText ${myProjectsEffect}`} ref={RefStack}>My Stack</div>}
                 <MyStack />
                 {<div className={`titleText ${myProjectsEffect}`} ref={myProjects}>Contact Me</div>}
 
 
             </div>
-            <SideBar />
-        </div>
+            {!showMore && <SideBar class={sideBarClass} />
+            }
+            <SideBar class='sideBarFooter' footer={true} />     </div>
     );
 };
 
