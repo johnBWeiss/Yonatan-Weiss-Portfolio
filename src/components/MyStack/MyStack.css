@@ -1,0 +1,32 @@
+.myStackContainer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.myStackInnerContainer {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.stackLogo {
+  height: 60px;
+  width: 60px;
+  object-fit: scale-down;
+}
+
+.singleStack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.stackTitle {
+  color: white;
+}

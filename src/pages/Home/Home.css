@@ -36,7 +36,7 @@
 
 .emptyPersonalMessage {
   font-size: 34px;
-  color: white;
+  color: rgb(255, 225, 58);
   animation: personalMessageEven 7.5s;
   animation-iteration-count: infinite;
   min-width: 30vw;

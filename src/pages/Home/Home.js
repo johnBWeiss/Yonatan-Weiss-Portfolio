@@ -5,6 +5,8 @@ import LogoHeader from '../../components/LogoHeader/LogoHeader';
 import { Projects } from '../../components/Projects/Projects';
 import openingParagraph from '../../assets/text/text'
 import downArrow from '../../assets/images/logos/downArrow.png'
+import { MyStack } from "../../components/MyStack/MyStack";
+import { SideBar } from "../../components/SideBar/SideBar";
 
 const HomeContainer = () => {
 
@@ -66,7 +68,7 @@ const HomeContainer = () => {
                         <div className='HomeTitleText'>Hi, I am Yonatan, a Full Stack Developer</div>
                     </div>
                 </div>
-                <div className='introHeaderContainer'>
+                {<div className='introHeaderContainer'>
                     <div className='introInnerHeaderContainer'>
                         <div className='profilePicContainer'>
                             <img
@@ -79,7 +81,7 @@ const HomeContainer = () => {
                             {openingParagraph[count]}
                         </div>
                     </div>
-                </div>
+                </div>}
                 {showMore && <img className="downArrow" src={downArrow} />}
                 {!showMore && <div className={`titleText ${myProjectsEffect}`} ref={myProjects}>My Projects</div>}
                 {showProjects &&
@@ -87,7 +89,14 @@ const HomeContainer = () => {
                         <Projects />
                     </div>
                 }
+                {<div className={`titleText ${myProjectsEffect}`} ref={myProjects}>My Posts</div>}
+                {<div className={`titleText ${myProjectsEffect}`} ref={myProjects}>My Stack</div>}
+                <MyStack />
+                {<div className={`titleText ${myProjectsEffect}`} ref={myProjects}>Contact Me</div>}
+
+
             </div>
+            <SideBar />
         </div>
     );
 };

@@ -1,0 +1,27 @@
+.sideBarContainer {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 400px;
+  background-color: black;
+  align-items: center;
+  border-radius: 30px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  justify-content: space-between;
+}
+
+.singleSideBar {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.sideBarLogo {
+  height: 50px;
+}
+
+.sideBarTitle {
+  color: white;
+  align-self: center;
+}

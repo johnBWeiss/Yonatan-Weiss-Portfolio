@@ -1,6 +1,5 @@
 import React from 'react';
 import './LogoHeader.css';
-import threeLines from '../../assets/images/threeLines.png'
 import logos from "../../assets/images/logos";
 
 import YCV from '../../assets/Yonatan Full Stack CV.pdf'
@@ -43,7 +42,7 @@ const LogoHeader = () => {
           >
             <img
               onClick={navLogin}
-              src={github}
+              src={github.src}
               alt="github"
               className='headerLogo'
             />
