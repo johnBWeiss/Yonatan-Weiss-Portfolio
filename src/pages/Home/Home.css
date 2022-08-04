@@ -139,7 +139,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-image: url("../../assets/images/bannerBackground.jpg");
   width: 100vw;
   border-radius: 30px;
   padding-top: 2.5%;

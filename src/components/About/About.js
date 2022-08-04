@@ -3,8 +3,8 @@ import './About.css'
 import logos from '../../assets/images/logos'
 
 export const About = ({ refContainer }) => {
-    const { location, creativity, hardworker } = logos
-    const aboutLogos = [location, creativity, hardworker]
+    const { location, creativity, hardworker, building, developer, crown, responsive } = logos
+    const aboutLogos = [creativity, location, hardworker, building, developer, responsive]
     return (
         <div className={refContainer ? refContainer : 'noShowAbout'}>
             <div className='aboutInnerContainer'>
@@ -16,12 +16,10 @@ export const About = ({ refContainer }) => {
                         alt='location'
                     />
                     <div className='aboutLogoTitle'>{v.title}</div>
-
                 </div>))}
             </div>
 
-            <div className='refInnerCenter'></div>
-            <div className='refInnerRight'></div>
+
 
 
         </div>

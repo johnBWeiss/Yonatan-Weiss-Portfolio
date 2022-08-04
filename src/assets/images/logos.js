@@ -20,6 +20,10 @@ import tech from '../../assets/images/logos/tech.png'
 import location from '../../assets/images/logos/location.png'
 import creativity from '../../assets/images/logos/creativity.png'
 import hardworker from '../../assets/images/logos/hardworker.png'
+import building from '../../assets/images/logos/building.png'
+import responsive from '../../assets/images/logos/responsive.png'
+import developer from '../../assets/images/logos/developer.png'
+import crown from '../../assets/images/logos/crown.png'
 
 
 
@@ -28,11 +32,11 @@ import hardworker from '../../assets/images/logos/hardworker.png'
 
 
 const logos = {
-    creativity: { src: creativity, title: "I'm creative with a great passion for design" }, location: {
+    developer: { src: developer, title: "Experienced with React, Redux, Node, Git " }, crown: { src: crown, title: "Motivated to be CSS royalty" }, responsive: { src: responsive, title: "Responsive, Mobile first layout design" }, building: { src: building, title: "Driven to build every project to completion" }, creativity: { src: creativity, title: "Creative with a great passion for front end design" }, location: {
         src: location, title: 'Open for work in the Jerusalem or Tel Aviv area'
     }, tech: { src: tech, title: 'Tech' }, home: { src: home, title: 'Home' },
     css: { src: css, title: 'CSS3' }, git: { src: git, title: 'Git' },
-    hardworker: { src: hardworker, title: 'I am an extremly hard worker with elite accountabilty' }, git: { src: git, title: 'Git' },
+    hardworker: { src: hardworker, title: 'Extremly hard worker with elite accountability' }, git: { src: git, title: 'Git' },
     html: { src: html, title: 'HTML5' },
     redux: { src: redux, title: 'Redux-Toolkit' }, mongo: { src: mongo, title: 'MongoDB' },
     vuetify: { src: vuetify, title: 'Vuetify' }, github: { src: github, title: 'Github' },

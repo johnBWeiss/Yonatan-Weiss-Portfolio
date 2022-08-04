@@ -1,14 +1,17 @@
 .AboutContainer {
-  height: 700px;
+  height: 810px;
   width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 5%;
-  background-color: black;
+  background-image: url("../../assets/images/aboutBackground.jpg");
   margin-bottom: 8%;
   animation: AboutContainer 0.8s linear 0s 1 forwards;
 }
 
 .noShowAbout {
-  height: 700px;
+  height: 870px;
   width: 900px;
   border-radius: 5%;
   /* background-color: transparent; */
@@ -37,15 +40,17 @@
   flex-direction: column;
   padding: 6%;
   width: 90%;
-  gap: 20px;
+  gap: 30px;
 }
 .aboutSingleItem {
   display: flex;
-  gap: 50px;
+  gap: 60px;
 }
 
 .aboutLogo {
   height: 90px;
+  width: 90px;
+  object-fit: scale-down;
 }
 
 .aboutLogoTitle {
