@@ -4,15 +4,23 @@
   border-radius: 5%;
   background-color: black;
   margin-bottom: 8%;
-  animation: AboutContainer 1.8s linear 0s 1 forwards;
+  animation: AboutContainer 0.8s linear 0s 1 forwards;
 }
 
+.noShowAbout {
+  height: 700px;
+  width: 900px;
+  border-radius: 5%;
+  /* background-color: transparent; */
+  opacity: 0;
+  margin-bottom: 8%;
+}
 @keyframes AboutContainer {
   0% {
-    transform: translateX(200%);
+    transform: translateX(100%);
   }
 
-  74% {
+  70% {
     transform: translateX(0);
   }
   87% {
@@ -24,11 +32,24 @@
   }
 }
 
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.aboutInnerContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 6%;
+  width: 90%;
+  gap: 20px;
+}
+.aboutSingleItem {
+  display: flex;
+  gap: 50px;
+}
+
+.aboutLogo {
+  height: 90px;
+}
+
+.aboutLogoTitle {
+  color: white;
+  align-self: center;
+  font-size: 30px;
 }

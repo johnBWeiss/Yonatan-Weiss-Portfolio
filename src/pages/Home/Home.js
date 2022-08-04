@@ -18,10 +18,10 @@ const HomeContainer = () => {
     const [myProjectsEffect, setMyProjectsEffect] = useState('noShowProjects');
     const [sideBarClass, setSideBarClass] = useState('noShowSideBar');
     const [openingTextClass, setOpeningTextClass] = useState(true);
-    const [AboutRefClass, setAboutRefClass] = useState(null);
+    const [AboutRefClass, setAboutRefClass] = useState('noShowAbout');
     const [count, setCount] = useState(0);
     const myProjects = useRef(null)
-    const RefStack = useRef(null)
+    const stackRef = useRef(null)
     const AboutRef = useRef(null)
 
 
@@ -57,7 +57,6 @@ const HomeContainer = () => {
         }
 
 
-
         if (
             window.scrollY >= (window.innerHeight - 400)
         ) {
@@ -70,7 +69,7 @@ const HomeContainer = () => {
 
         if (
             window.scrollY + 450 >=
-            RefStack?.current?.offsetTop
+            stackRef?.current?.offsetTop
         ) {
             setSideBarClass('noShowSideBar')
         }
@@ -133,7 +132,7 @@ const HomeContainer = () => {
             {showProjects && <>
                 {<div className={`titleText`} ref={AboutRef}>About</div>}
                 <About refContainer={AboutRefClass} />
-                {<div className={`titleText ${myProjectsEffect}`} ref={RefStack}>My Stack</div>}
+                {<div className={`titleText ${myProjectsEffect}`} ref={stackRef}>My Stack</div>}
                 <MyStack />
                 {<div className={`titleText ${myProjectsEffect}`} ref={myProjects}>Contact Me</div>}
 
