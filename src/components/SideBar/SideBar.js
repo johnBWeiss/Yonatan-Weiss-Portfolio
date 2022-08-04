@@ -4,9 +4,8 @@ import './SideBar.css'
 
 const { home, linkedIn, github, tech } = logos
 
-const logoArray = [github, linkedIn, tech, home]
+const logoArray = [home, linkedIn, github, tech]
 
-// 'singleSideBar'
 export const SideBar = (animation) => {
     return (
         <div className={`${animation.class}`}>

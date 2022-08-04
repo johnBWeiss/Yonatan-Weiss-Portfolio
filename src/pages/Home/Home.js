@@ -45,22 +45,25 @@ const HomeContainer = () => {
         }
 
         if (
-            window.scrollY + 400 >=
-            myProjects.current?.offsetTop
+            window.scrollY >= (window.innerHeight - 400)
         ) {
             setSideBarClass('sideBarContainer')
+
+
+        }
+
+        else {
+            setSideBarClass('noShowSideBar')
 
         }
 
         if (
             window.scrollY + 450 >=
-            RefStack.current?.offsetTop
+            RefStack?.current?.offsetTop
         ) {
             setSideBarClass('noShowSideBar')
 
         }
-
-
 
     };
 
@@ -115,16 +118,17 @@ const HomeContainer = () => {
                         <Projects />
                     </div>
                 }
-                {<div className={`titleText ${myProjectsEffect}`} ref={myProjects}>My Posts</div>}
-                {<div className={`titleText ${myProjectsEffect}`} ref={RefStack}>My Stack</div>}
-                <MyStack />
-                {<div className={`titleText ${myProjectsEffect}`} ref={myProjects}>Contact Me</div>}
+                {showProjects && <>
+                    {<div className={`titleText ${myProjectsEffect}`} ref={myProjects}>My Posts</div>}
+                    {<div className={`titleText ${myProjectsEffect}`} ref={RefStack}>My Stack</div>}
+                    <MyStack />
+                    {<div className={`titleText ${myProjectsEffect}`} ref={myProjects}>Contact Me</div>}
 
-
+                </>}
             </div>
-            {!showMore && <SideBar class={sideBarClass} />
+            {<SideBar class={sideBarClass} />
             }
-            <SideBar class='sideBarFooter' footer={true} />     </div>
+            {showProjects && <SideBar class='sideBarFooter' footer={true} />}    </div>
     );
 };
 
