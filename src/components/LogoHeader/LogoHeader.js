@@ -2,14 +2,20 @@ import React from 'react';
 import './LogoHeader.css';
 import logos from "../../assets/images/logos";
 
-import YCV from '../../assets/Yonatan Full Stack CV.pdf'
-
 import { useNavigate } from 'react-router-dom';
 
 
-const LogoHeader = () => {
-  const { linkedIn, github, mail, info, CV } = logos
+const LogoHeader = (refs) => {
+  const { linkedIn, github, mail, info, CV, home, tech, building } = logos
   const navigate = useNavigate();
+
+  const header = [linkedIn, CV, github, mail]
+  const footer = [home, tech, info, building]
+  const logoArray = true
+    // type 
+    ? header : footer
+
+
 
   const navLogin = () => {
     navigate('/')
@@ -18,81 +24,73 @@ const LogoHeader = () => {
   return (
     <div className='headerContainer'>
       <div className='headerInnerWidth'>
-        <div className='logoContainerHeader'>
+        {refs.type === 'header' && <div className='logoContainerHeader'>
 
 
-          <a
-            href='https://bit.ly/3blkAK3'
+          {header.map((v, i) => (<a
+            href={v.link}
             // download
             target="_blank"
             rel="noreferrer noopener"
           >
             <img
-              onClick={navLogin}
-              src={linkedIn.src}
-              alt="linkedin"
+              // onClick={() => { refs.refs[i]?.current?.scrollIntoView() }}
+              src={v.src}
               className='headerLogo'
             />
-          </a>
-          <a
-            href='https://github.com/johnBWeiss'
+          </a>))}
+
+
+
+
+
+
+
+
+
+
+        </div>}
+
+
+        {refs.type === 'footer' && <div className='logoContainerHeader'>
+
+
+          {header.map((v, i) => (<a
+            href={v.link}
             // download
             target="_blank"
             rel="noreferrer noopener"
           >
             <img
-              onClick={navLogin}
-              src={github.src}
-              alt="github"
+              // onClick={() => { refs.refs[i]?.current?.scrollIntoView() }}
+              src={v.src}
               className='headerLogo'
             />
-          </a>
-          <a
-            href={YCV}
-            download
+          </a>))}
+
+          {footer.map((v, i) => (<a
+            // href={v.link}
+            // download
             target="_blank"
             rel="noreferrer noopener"
           >
             <img
-              onClick={navLogin}
-              src={CV}
-              alt="CV"
+              onClick={() => { if (refs.refs[i] === '#top') { window.scrollTo({ top: 0, left: 0, behavior: "smooth" }) } refs.refs[i]?.current?.scrollIntoView() }}
+              src={v.src}
               className='headerLogo'
             />
-          </a>
-
-
-
-          {/* <img
-            onClick={navLogin}
-            src={info}
-            alt="info"
-            className='headerLogo'
-          /> */}
-
-
-
-
-          <a
-            href='          mailto:yoniw7@gmail.com
-'
-            download
-          // target="_blank"
-          // rel="noreferrer noopener"
-          >
-            <img
-              onClick={navLogin}
-              src={mail}
-              alt="mail"
-              className='headerLogo'
-            />
-          </a>
+          </a>))}
 
 
 
 
 
-        </div>
+
+
+
+
+
+        </div>}
 
       </div>
     </div>

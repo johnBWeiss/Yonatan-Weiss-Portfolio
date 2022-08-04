@@ -99,7 +99,7 @@ const HomeContainer = () => {
 
     return (
         <div className='vertFlexHome'>
-            <LogoHeader />
+            <LogoHeader type={'header'} />
             <div className='HomeContainer'>
                 <div className='titleInnerFlex'>
                     <div className='HomeTitleOverlay'>
@@ -130,15 +130,16 @@ const HomeContainer = () => {
 
             </div>
             {showProjects && <>
-                {<div className={`titleText`} ref={AboutRef}>About</div>}
+                {<div id='test' className={`titleText`} ref={AboutRef}>About</div>}
                 <About refContainer={AboutRefClass} />
                 {<div className={`titleText ${myProjectsEffect}`} ref={stackRef}>My Stack</div>}
                 <MyStack />
-                {<div className={`titleText ${myProjectsEffect}`} ref={myProjects}>Contact Me</div>}
 
             </>}
             {<SideBar class={sideBarClass} />
             }
+            <LogoHeader refs={['#top', stackRef, AboutRef, myProjects]} type={'footer'} />
+
             {showProjects && <SideBar class='sideBarFooter' footer={true} />}    </div>
     );
 };

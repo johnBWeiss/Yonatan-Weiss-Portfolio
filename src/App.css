@@ -27,3 +27,6 @@ body {
 /* * {
   font-family: "Libre Baskerville", serif;
 } */
+html {
+  scroll-behavior: smooth;
+}

@@ -11,8 +11,8 @@
   padding-bottom: 3.5%;
   justify-content: space-between;
   position: fixed;
-  top: 25vh;
-  left: 4%;
+  top: 18vh;
+  left: 8%;
   animation: sideBar 1s linear 0s 1 forwards;
 }
 

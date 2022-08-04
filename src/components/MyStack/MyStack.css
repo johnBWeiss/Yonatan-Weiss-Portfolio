@@ -1,8 +1,8 @@
 .myStackContainer {
-  background-color: black;
   display: flex;
   justify-content: center;
   width: 100vw;
+  margin-bottom: 5%;
 }
 
 .myStackInnerContainer {
@@ -25,6 +25,30 @@
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  background-image: url("../../assets/images/projBackground.jpg");
+  padding: 2%;
+  border-radius: 20%;
+  /* animation: singleStack 0.5s linear 3s 1 forwards; */
+}
+
+@keyframes singleStack {
+  0% {
+    transform: translatey(30);
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    transform: translatey(-50%);
+    opacity: 0.75;
+    box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 5px gold, 0 0 10px gold,
+      0 0 10px #0ba9ca, 0 0 50px gold;
+  }
+
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
 }
 
 .stackTitle {
