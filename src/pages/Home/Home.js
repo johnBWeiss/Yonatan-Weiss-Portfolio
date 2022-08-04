@@ -135,12 +135,12 @@ const HomeContainer = () => {
                 {<div className={`titleText ${myProjectsEffect}`} ref={stackRef}>My Stack</div>}
                 <MyStack />
 
-            </>}
-            {<SideBar class={sideBarClass} />
-            }
-            <LogoHeader refs={['#top', stackRef, AboutRef, myProjects]} type={'footer'} />
 
-            {showProjects && <SideBar class='sideBarFooter' footer={true} />}    </div>
+                {<SideBar class={sideBarClass} />
+                }
+                <LogoHeader refs={['#top', stackRef, AboutRef, myProjects]} type={'footer'} />
+            </>}
+        </div>
     );
 };
 
