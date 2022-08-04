@@ -27,7 +27,7 @@
 }
 
 .personalMessage {
-  font-size: 34px;
+  font-size: 40px;
   color: white;
   animation: personalMessageOdd 7.5s;
   animation-iteration-count: infinite;
@@ -35,8 +35,8 @@
 }
 
 .emptyPersonalMessage {
-  font-size: 34px;
-  color: rgb(255, 225, 58);
+  font-size: 40px;
+  color: white;
   animation: personalMessageEven 7.5s;
   animation-iteration-count: infinite;
   min-width: 30vw;
@@ -83,12 +83,12 @@
 }
 
 .HomeTitleText {
-  color: rgb(255, 255, 255);
+  color: gold;
   opacity: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Righteous", cursive;
   font-size: 40px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
+  border-right: 0.15em solid gold; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
@@ -139,12 +139,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-image: url("../../assets/images/BackgroundStripes.png"); */
   background-color: black;
   width: 100vw;
   border-radius: 30px;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
   margin-bottom: 8%;
 }
 
@@ -186,7 +185,7 @@
   color: rgb(255, 225, 58);
   font-size: 150px;
   margin-bottom: 10%;
-  font-family: enchanted land;
+  font-family: "Righteous", cursive;
 }
 
 .singleItem:hover {
@@ -299,16 +298,7 @@
     border-color: transparent;
   }
   50% {
-    border-color: orange;
-  }
-}
-
-@media (max-width: 3000px) {
-  .HomeInnerContainerLessThanThree {
-    width: 1000px;
-  }
-  .HomeContainer {
-    max-width: 1202px;
+    border-color: white;
   }
 }
 

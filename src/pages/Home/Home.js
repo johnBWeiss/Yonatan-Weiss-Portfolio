@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import './Home.css';
 import profilePic from '../../assets/images/profileS.png'
 import LogoHeader from '../../components/LogoHeader/LogoHeader';
+import { About } from "../../components/About/About";
 import { Projects } from '../../components/Projects/Projects';
 import openingParagraph from '../../assets/text/text'
 import downArrow from '../../assets/images/logos/downArrow.png'
@@ -17,18 +18,17 @@ const HomeContainer = () => {
     const [myProjectsEffect, setMyProjectsEffect] = useState('noShowProjects');
     const [sideBarClass, setSideBarClass] = useState('noShowSideBar');
     const [openingTextClass, setOpeningTextClass] = useState(true);
+    const [AboutRefClass, setAboutRefClass] = useState(null);
     const [count, setCount] = useState(0);
     const myProjects = useRef(null)
     const RefStack = useRef(null)
-    console.log(RefStack);
+    const AboutRef = useRef(null)
+
 
 
     const handleScroll = () => {
         const position = window.pageYOffset;
         setScrollPosition(position);
-        console.log(RefStack.current?.offsetHeight);
-        console.log(window.scrollY);
-
 
         if (
             window.innerHeight + window.scrollY + 0.5 >=
@@ -37,7 +37,6 @@ const HomeContainer = () => {
             setShowProjects(true)
             setMyProjectsEffect('showProjects')
             setShowMore(false)
-            // setSideBarClass('sideBarContainer')
         }
         else {
             setShowProjects(false)
@@ -45,16 +44,28 @@ const HomeContainer = () => {
         }
 
         if (
+            window.innerHeight + window.scrollY - 550 >=
+            AboutRef?.current?.offsetTop
+
+        ) {
+            setAboutRefClass('AboutContainer')
+        }
+
+        else {
+            setAboutRefClass(null)
+
+        }
+
+
+
+        if (
             window.scrollY >= (window.innerHeight - 400)
         ) {
             setSideBarClass('sideBarContainer')
-
-
         }
 
         else {
             setSideBarClass('noShowSideBar')
-
         }
 
         if (
@@ -62,7 +73,6 @@ const HomeContainer = () => {
             RefStack?.current?.offsetTop
         ) {
             setSideBarClass('noShowSideBar')
-
         }
 
     };
@@ -118,14 +128,16 @@ const HomeContainer = () => {
                         <Projects />
                     </div>
                 }
-                {showProjects && <>
-                    {<div className={`titleText ${myProjectsEffect}`} ref={myProjects}>My Posts</div>}
-                    {<div className={`titleText ${myProjectsEffect}`} ref={RefStack}>My Stack</div>}
-                    <MyStack />
-                    {<div className={`titleText ${myProjectsEffect}`} ref={myProjects}>Contact Me</div>}
 
-                </>}
             </div>
+            {showProjects && <>
+                {<div className={`titleText`} ref={AboutRef}>About</div>}
+                <About refContainer={AboutRefClass} />
+                {<div className={`titleText ${myProjectsEffect}`} ref={RefStack}>My Stack</div>}
+                <MyStack />
+                {<div className={`titleText ${myProjectsEffect}`} ref={myProjects}>Contact Me</div>}
+
+            </>}
             {<SideBar class={sideBarClass} />
             }
             {showProjects && <SideBar class='sideBarFooter' footer={true} />}    </div>

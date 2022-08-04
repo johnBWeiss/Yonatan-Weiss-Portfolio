@@ -43,6 +43,14 @@
   display: flex;
   justify-content: space-between;
   width: 70%;
+  padding-bottom: 5%;
+  border-bottom: 1px solid transparent;
+}
+
+.singleSideBar:hover {
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  /* transition: border 0.8s; */
 }
 
 .sideBarLogo {
