@@ -17,7 +17,6 @@
 }
 .titleInnerFlex {
   direction: rtl;
-  /* justify-content: center; */
   color: #de9e1f;
   font-family: "Libre Baskerville", serif;
   animation-duration: 2.7s;
@@ -184,7 +183,7 @@
 .titleText {
   color: rgb(255, 225, 58);
   font-size: 150px;
-  margin-bottom: 7%;
+  margin-bottom: 3.5%;
   font-family: "Righteous", cursive;
 }
 

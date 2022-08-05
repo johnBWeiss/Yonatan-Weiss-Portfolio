@@ -17,10 +17,10 @@
   0% {
     transform: translatey(-100%);
   }
-  80% {
+  70% {
     transform: translatey(0%);
   }
-  90% {
+  85% {
     transform: translatey(-3%);
   }
   100% {

@@ -28,9 +28,6 @@
   display: flex;
   justify-content: space-between;
   width: 500px;
-  /* gap: 100px;
-  align-items: center;
-  max-width: 30vw; */
 }
 
 .headerLogo {
@@ -41,7 +38,6 @@
 }
 
 .headerLogo:hover {
-  /* box-sizing: border-box; */
   transform: scale(150%);
   transition: transform 0.2s;
 }
