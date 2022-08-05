@@ -149,7 +149,7 @@ const HomeContainer = () => {
 
                 {<SideBar class={sideBarClass} refs={['#top', stackRef, AboutRef, myProjects]} />
                 }
-                <LogoHeader refs={['#top', stackRef, AboutRef, myProjects]} type={'footer'} />
+                <LogoHeader refs={['#top', myProjects]} type={'footer'} />
             </>}
             {showPopUp && <PopUp fathershowPopUpHandler={showPopUpHandler} content={popUpContent} />}
         </div>

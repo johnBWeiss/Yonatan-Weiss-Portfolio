@@ -74,25 +74,37 @@
 }
 
 @media (max-width: 750px) {
-  .logoContainerHeader {
+  /* .logoContainerHeader {
     width: 350px;
-  }
+  } */
 }
 
-@media (max-width: 571px) {
-  .logoContainerHeader {
+@media (max-width: 490px) {
+  /* .logoContainerHeader {
     width: 325px;
+  } */
+
+  .logoContainerHeader {
+    gap: 20px;
+    /* width: 500px; */
+  }
+
+  .headerLogo {
+    height: 35px;
+    animation: rocked 0.9s linear 1.25s 1 none, logoRoll 1.2s linear 0s 1 none;
+    transition: transform 0.2s;
+    border-radius: 50%;
   }
 }
 
 @media (max-width: 444px) {
-  .logoContainerHeader {
+  /* .logoContainerHeader {
     width: 300px;
-  }
+  } */
 }
 
 @media (max-width: 382px) {
-  .logoContainerHeader {
+  /* .logoContainerHeader {
     width: 280px;
-  }
+  } */
 }
