@@ -86,22 +86,19 @@
   opacity: 0;
   font-family: "Righteous", cursive;
   font-size: 40px;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid gold; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
+  overflow: hidden;
+  border-right: 0.15em solid gold;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
   animation: typing 14s steps(30, end) infinite,
     blink-caret 0.8s step-end infinite;
   animation-delay: 2.5s;
 }
 
-/* The typing effect */
-
 .HomeTitleOverlay {
   position: relative;
   display: flex;
-  /* height: 200px; */
   z-index: -1;
   overflow: hidden;
   direction: ltr;
@@ -140,7 +137,6 @@
   align-items: center;
   background-image: url("../../assets/images/bannerBackground.jpg");
   width: 100vw;
-  border-radius: 30px;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
   margin-bottom: 8%;
@@ -151,13 +147,13 @@
   align-items: center;
   justify-content: space-between;
   width: 70%;
-  gap: 5px;
+  gap: 22px;
 }
 
 .profilePic {
   /* background-color: black; */
   border-radius: 50%;
-  height: 240px;
+  height: 210px;
 }
 
 .singleItem {
@@ -301,6 +297,10 @@
   }
 }
 
+/* @media (max-width: 1251px) {
+
+} */
+
 @media (max-width: 1251px) {
   .HomeTitleText {
     font-size: 28px;
@@ -308,7 +308,47 @@
   .HomeContainer {
     max-width: 899px;
   }
+
+  .titleInnerFlex {
+    padding-bottom: 7%;
+    /* animation: downArrowMedia 1.2s linear 0s infinite none; */
+  }
+
+  .titleText {
+    margin-bottom: 10%;
+  }
+
+  @keyframes downArrow {
+    0% {
+      top: -30px;
+      opacity: 1;
+    }
+
+    100% {
+      top: 40px;
+      opacity: 0;
+    }
+  }
 }
+
+@media (max-width: 1136px) {
+  .personalMessage {
+    font-size: 35px;
+  }
+  .emptyPersonalMessage {
+    font-size: 35px;
+  }
+  .introInnerHeaderContainer {
+    width: 80%;
+    gap: 14px;
+  }
+
+  .titleText {
+    font-size: 130px;
+    margin-bottom: 7.5%;
+  }
+}
+
 /* 
 @keyframes typing {
   0% {
@@ -335,7 +375,20 @@
   }
 } */
 
-@media (max-width: 990px) {
+@media (max-width: 992px) {
+  .titleText {
+    font-size: 106px;
+  }
+  .personalMessage {
+    font-size: 28px;
+  }
+  .emptyPersonalMessage {
+    font-size: 28px;
+  }
+
+  .profilePic {
+    height: 165px;
+  }
   .HomeTitleText {
     font-size: 20px;
   }
@@ -383,7 +436,53 @@
   }
 }
 
-@media (max-width: 651px) {
+@media (max-width: 750px) {
+  .titleText {
+    font-size: 86px;
+  }
+  .introInnerHeaderContainer {
+    width: 80%;
+    gap: 14px;
+  }
+  .logoContainerHeader {
+    width: 350px;
+  }
+  .emptyPersonalMessage {
+    font-size: 23px;
+  }
+  .personalMessage {
+    font-size: 23px;
+  }
+  .profilePic {
+    height: 160px;
+  }
+  .downArrow {
+    height: 58px;
+  }
+  .titleInnerFlex {
+    padding-bottom: 14%;
+    margin-top: 6%;
+  }
+
+  @keyframes downArrow {
+    0% {
+      top: 30px;
+      opacity: 1;
+    }
+
+    100% {
+      top: 90px;
+      opacity: 0;
+    }
+  }
+}
+
+@media (max-width: 652px) {
+  .titleText {
+    font-size: 65px;
+    margin-bottom: 16%;
+    margin-top: 5%;
+  }
   .HomeTitleText {
     font-size: 16px;
   }
@@ -407,9 +506,11 @@
     65% {
       width: 41%;
     }
-
+    95% {
+      width: 100%;
+    }
     100% {
-      width: 96%;
+      width: 100%;
     }
   }
   .HomeInnerContainer {
@@ -425,12 +526,54 @@
   }
 }
 
+@media (max-width: 631px) {
+  .titleText {
+    font-size: 64px;
+  }
+  .emptyPersonalMessage {
+    font-size: 20px;
+  }
+  .personalMessage {
+    font-size: 20px;
+  }
+  .profilePic {
+    height: 130px;
+  }
+  .downArrow {
+    height: 50px;
+  }
+  .titleInnerFlex {
+    padding-bottom: 18%;
+    margin-top: 6%;
+  }
+}
+
+@media (max-width: 571px) {
+  .titleText {
+    font-size: 57px;
+  }
+  .emptyPersonalMessage {
+    font-size: 18px;
+  }
+  .personalMessage {
+    font-size: 18px;
+  }
+  .profilePic {
+    height: 110px;
+  }
+
+  .titleInnerFlex {
+    padding-bottom: 18%;
+    margin-top: 6%;
+  }
+}
+
 @media (max-width: 483px) {
   .HomeTitleText {
     font-size: 13px;
   }
 }
-@media (max-width: 428px) {
+@media (max-width: 430px) {
   .HomeInnerContainer {
     margin-bottom: 30px;
   }
@@ -438,10 +581,24 @@
   .HomeTitleText {
     font-size: 12px;
   }
+
+  .emptyPersonalMessage {
+    font-size: 16px;
+  }
+  .personalMessage {
+    font-size: 16px;
+  }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 378px) {
   .HomeTitleText {
     font-size: 11px;
+  }
+
+  .emptyPersonalMessage {
+    font-size: 15px;
+  }
+  .personalMessage {
+    font-size: 15px;
   }
 }

@@ -40,6 +40,7 @@
 .headerLogo:hover {
   transform: scale(150%);
   transition: transform 0.2s;
+  cursor: pointer;
 }
 
 @keyframes rocked {
@@ -68,5 +69,29 @@
   }
   100% {
     transform: rotate(3600deg);
+  }
+}
+
+@media (max-width: 750px) {
+  .logoContainerHeader {
+    width: 350px;
+  }
+}
+
+@media (max-width: 571px) {
+  .logoContainerHeader {
+    width: 325px;
+  }
+}
+
+@media (max-width: 444px) {
+  .logoContainerHeader {
+    width: 300px;
+  }
+}
+
+@media (max-width: 382px) {
+  .logoContainerHeader {
+    width: 280px;
   }
 }

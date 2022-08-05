@@ -147,7 +147,7 @@ const HomeContainer = () => {
                 <MyStack />
 
 
-                {<SideBar class={sideBarClass} />
+                {<SideBar class={sideBarClass} refs={['#top', stackRef, AboutRef, myProjects]} />
                 }
                 <LogoHeader refs={['#top', stackRef, AboutRef, myProjects]} type={'footer'} />
             </>}

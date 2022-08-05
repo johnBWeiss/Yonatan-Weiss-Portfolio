@@ -7,8 +7,8 @@
   background-image: url("../../assets/images/projBackground.jpg");
   align-items: center;
   border-radius: 30px;
-  padding-top: 3.5%;
-  padding-bottom: 3.5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
   justify-content: space-between;
   position: fixed;
   top: 18vh;
@@ -43,8 +43,9 @@
   display: flex;
   justify-content: space-between;
   width: 70%;
-  padding-bottom: 5%;
+  padding-bottom: 3%;
   border-bottom: 1px solid transparent;
+  text-decoration: none;
 }
 
 .singleSideBar:hover {

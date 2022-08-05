@@ -50,12 +50,45 @@
   justify-content: space-between;
   min-width: 60%;
   position: relative;
-  bottom: -28px;
+  bottom: -35px;
 }
 .logo {
-  height: 30px;
+  height: 40px;
+  transform: scale(100%);
+  transition: 0.2s;
+}
+
+.logo:hover {
+  transform: scale(150%);
+  transition: 0.2s;
 }
 
 .singleItem:hover {
   cursor: pointer;
+}
+
+@media (max-width: 1136px) {
+  .projectGalleryContainer {
+    gap: 70px 0px;
+    width: 800px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .projectGalleryContainer {
+    width: 770px;
+  }
+}
+
+@media (max-width: 992px) {
+  .projectGalleryContainer {
+    width: 699px;
+  }
+}
+
+@media (max-width: 378px) {
+  .singleItem {
+    width: 350px;
+    background-image: url(http://localhost:3000/static/media/projBackground.c559f19….jpg);
+  }
 }
