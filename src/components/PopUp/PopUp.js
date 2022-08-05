@@ -1,19 +1,23 @@
 import React from 'react'
+import './PopUp.css'
+import ReactPlayer from "react-player"
+
 
 export const PopUp = (popUP) => {
+    const { fathershowPopUpHandler, content } = popUP
+    const showPopUpHandler = () => fathershowPopUpHandler()
 
-    const { data: { title }, data: { pic }, data: { description } } = popUP
     return (
-        <div className='popUpInnerContainer'>
-            <div className='popUpTitle'>{title}</div>
-            <div className='upperPopUpContent'>
-                <img
-                    className='popUpImage'
-                    src={pic}
-                    alt="pic"
-                />
-                <div className='popUpDescription'>
-                    {description}
+        <div className='popUp' onClick={showPopUpHandler}>
+            <div className='popUpInnerContainer'>
+                <div className='popUpTitle'>{content.title}</div>
+                <div className='upperPopUpContent'>
+                    <div className='playerContainer'>
+                        <ReactPlayer url={content.src} playing={true}
+                            loop={true} controls={false}
+                            muted={true} width={'100%'} ></ReactPlayer></div>
+                    <div className='popUpDescription'>
+                        {content.description}                           </div>
                 </div>
             </div>
         </div>

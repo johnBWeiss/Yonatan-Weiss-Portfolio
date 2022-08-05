@@ -8,8 +8,13 @@ import JsLogo from '../../assets/images/logos/js.png'
 import vueLogo from '../../assets/images/logos/vue.png'
 
 
-const videosList = [{ src: cinema, title: 'Cinema', logo: angularLogo, live: true },
-{ src: Musixx, title: 'Musixx', logo: reactLogo, live: false },
-{ src: Phoogle, title: 'Phoogle', logo: vueLogo, live: false },
-{ src: TITANWAR, title: 'TitanWar', logo: JsLogo, live: false }];
+const videosList = [{ src: cinema, title: 'Cinema', logo: angularLogo, live: true, link: 'https://github.com/johnBWeiss/FilmCritic/tree/main/src/app', domain: 'https://cinema-yonatan-weiss.netlify.app/', description: 'A minimalistic web app designed for searching the most popular movies listed in the imdb database. The app has an option to search for specific titles according to personal input as well.' },
+{
+    src: Musixx, title: 'Musixx', logo: reactLogo, live: false, link: 'https://github.com/johnBWeiss/Musixx/tree/main/src', description: 'A restyled clone of YouTube, allowing users to search and play videos, authenticate credentials, and add to a database of favorites.'
+},
+{
+    src: Phoogle, title: 'Phoogle', logo: vueLogo, live: false, link: 'https://github.com/johnBWeiss/phoogle---a-visual-search-engine/tree/main/src',
+    description: 'Phoogle is a google search engine clone, with the added functionality of returning not only the links of your search results, but their homepage screenshots as well, enabling an additional visual aid for an improved user experience.'
+},
+{ src: TITANWAR, title: 'TitanWar', logo: JsLogo, live: false, link: 'https://github.com/johnBWeiss/TITANWAR', description: 'An immersive fantasy themed memory game with animation, sound effects, and an atypical point management system, with the ability to save and display a high score list.' }];
 export default videosList 

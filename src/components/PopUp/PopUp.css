@@ -1,55 +1,55 @@
-.popUpImage {
-  width: 600px;
-  height: 270px;
+.popUp {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  background-image: url("../../assets/images/popUpBackground.jpg");
   object-fit: cover;
-  border-radius: 20px;
-  z-index: 4;
-  position: relative;
-  transition: opacity 1s;
-  opacity: 1;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Baskerville", serif;
 }
 
-.popUpImage:hover {
-  transition: opacity 1s;
-  opacity: 0.2;
-}
-
-.upperPopUpContent {
-  width: 600px;
-  height: 350px;
+.popUp:hover {
+  cursor: pointer;
 }
 
 .popUpInnerContainer {
   display: flex;
   flex-direction: column;
-  width: 600px;
-  height: 700px;
+  width: 80%;
   justify-content: center;
   align-items: center;
   gap: 20px 20px;
 }
 
-.popUpDescription {
-  color: white;
-  font-size: 1rem;
+.upperPopUpContent {
+  /* width: 600px;
+  height: 350px; */
   width: 90%;
-  text-align: center;
-  font-weight: 200;
-  z-index: 3;
-  position: relative;
-  bottom: 65%;
-  left: 5%;
-}
-.popUpTitle {
-  font-size: 2rem;
-  color: #de9e1f;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
 }
 
-.popUpdetails {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #de9e1f;
+.popUpDescription {
+  color: white;
+  font-size: 2rem;
+  text-align: left;
+  align-self: center;
+  width: 50%;
+}
+.popUpTitle {
+  font-size: 8rem;
+  color: goldenrod;
+  font-family: "Righteous", cursive;
+}
+
+.playerContainer {
+  /* border: goldenrod 4px solid; */
 }
 
 @media (max-width: 667px) {
