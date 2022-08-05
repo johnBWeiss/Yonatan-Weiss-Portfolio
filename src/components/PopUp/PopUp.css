@@ -11,6 +11,21 @@
   justify-content: center;
   align-items: center;
   font-family: "Libre Baskerville", serif;
+  animation: slideInFromLeft 0.5s linear 0s 1 forwards;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translatey(-100%);
+  }
+  80% {
+    transform: translatey(0%);
+  }
+  90% {
+    transform: translatey(-3%);
+  }
+  100% {
+    transform: translatey(0);
+  }
 }
 
 .popUp:hover {
