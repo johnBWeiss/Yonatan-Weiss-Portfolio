@@ -51,6 +51,7 @@
 .singleSideBar:hover {
   border-bottom: 1px solid white;
   cursor: pointer;
+
   /* transition: border 0.8s; */
 }
 
@@ -113,4 +114,96 @@
   padding-top: 3.5%;
   padding-bottom: 3.5%;
   justify-content: space-between;
+}
+
+@media (max-width: 1600px) {
+  .sideBarContainer {
+    left: 4%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .singleSideBar:hover {
+    transform: scale(120%);
+    transition: 0.2s;
+  }
+
+  .singleSideBar {
+    transform: scale(100%);
+    transition: 0.2s;
+  }
+  .sideBarContainer {
+    display: flex;
+    flex-direction: column;
+    width: 20px;
+    height: 0px;
+    background-color: transparent;
+    background-image: none;
+  }
+
+  .sideBarContainer {
+    font-size: 0px;
+  }
+  @keyframes sideBarTitle {
+    0% {
+      font-size: 0px;
+    }
+
+    100% {
+      font-size: 0px;
+    }
+  }
+
+  @keyframes sideBar {
+    0% {
+      transform: translateX(-200%);
+      height: 0px;
+      width: 0px;
+      transform: translateX(-100%);
+    }
+
+    50% {
+      height: 400px;
+      width: 0px;
+      transform: translateX(-30%);
+    }
+    100% {
+      transform: translateX(0);
+      width: 0px;
+      height: 400px;
+    }
+  }
+}
+
+@media (max-width: 993px) {
+  .sideBarContainer {
+    left: 6%;
+  }
+}
+
+@media (max-width: 609px) {
+  .sideBarContainer {
+    left: 4%;
+  }
+}
+
+@media (max-width: 500px) {
+  @keyframes sideBarLogo {
+    0% {
+      height: 0px;
+    }
+
+    50% {
+      height: 20px;
+      transform: rotate(0deg);
+    }
+    80% {
+      height: 40px;
+      transform: rotate(720deg);
+    }
+    100% {
+      height: 40px;
+      transform: rotate(720deg);
+    }
+  }
 }

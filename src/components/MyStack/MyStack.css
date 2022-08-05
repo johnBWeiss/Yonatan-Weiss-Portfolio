@@ -8,14 +8,15 @@
 .myStackInnerContainer {
   width: 60%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 3%;
   padding-bottom: 3%;
+  gap: 10px;
 }
 
 .stackLogo {
   height: 60px;
-  width: 60px;
+  /* width: 60px; */
   object-fit: scale-down;
 }
 
@@ -53,4 +54,16 @@
 
 .stackTitle {
   color: white;
+}
+
+@media (max-width: 992px) {
+  .stackLogo {
+    height: 20px;
+    /* width: 60px; */
+    object-fit: scale-down;
+  }
+
+  .singleStack {
+    font-size: 10px;
+  }
 }

@@ -26,8 +26,9 @@
 .logoContainerHeader {
   color: "#6c6e71";
   display: flex;
-  justify-content: space-between;
-  width: 500px;
+  justify-content: center;
+  gap: 70px;
+  /* width: 500px; */
 }
 
 .headerLogo {

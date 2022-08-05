@@ -58,3 +58,26 @@
   align-self: center;
   font-size: 30px;
 }
+
+@media (max-width: 1100px) {
+  .AboutContainer {
+    height: 810px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    background-image: url("../../assets/images/aboutBackground.jpg");
+    margin-bottom: 8%;
+    animation: AboutContainer 0.8s linear 0s 1 forwards;
+  }
+
+  .noShowAbout {
+    height: 870px;
+    width: 400px;
+    border-radius: 5%;
+    /* background-color: transparent; */
+    opacity: 0;
+    margin-bottom: 8%;
+  }
+}
