@@ -2,14 +2,14 @@ import React from 'react'
 import './About.css'
 import logos from '../../assets/images/logos'
 
-export const About = ({ refContainer }) => {
+const About = ({ refContainer }) => {
     const { location, creativity, hardworker, building, developer, crown, responsive } = logos
     const aboutLogos = [creativity, location, hardworker, building, developer, responsive]
     return (
         <div className={refContainer ? refContainer : 'noShowAbout'}>
             <div className='aboutInnerContainer'>
 
-                {aboutLogos.map((v) => (<div className='aboutSingleItem'>
+                {aboutLogos.map((v) => (<div key={v.src} className='aboutSingleItem'>
                     <img
                         className='aboutLogo'
                         src={v.src}
@@ -25,3 +25,4 @@ export const About = ({ refContainer }) => {
         </div>
     )
 }
+export default About

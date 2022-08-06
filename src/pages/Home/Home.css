@@ -153,13 +153,9 @@
   50% {
     opacity: 0;
     color: rgb(208, 38, 135);
-
-    /* transform: rotate(0deg); */
   }
   60% {
     opacity: 1;
-
-    /* transform: rotate(0deg); */
   }
   62% {
     opacity: 1;
@@ -185,8 +181,6 @@
   76% {
     opacity: 1;
     transform: rotate(0deg);
-
-    /* transform: rotate(0); */
   }
 
   99% {
@@ -228,7 +222,6 @@
   justify-content: space-around;
   gap: 100px 0px;
   width: fit-content;
-  /* max-width: 700px; */
   padding-top: 12px;
   padding-bottom: 78px;
   z-index: 2;
@@ -256,7 +249,6 @@
 }
 
 .profilePic {
-  /* background-color: black; */
   border-radius: 50%;
   height: 170px;
 }
@@ -344,30 +336,22 @@
   0% {
     opacity: 0;
     margin-top: 4%;
-    /* margin-bottom: 0%; */
   }
 
   50% {
     opacity: 0;
     margin-top: 4%;
-    /* margin-bottom: 0%; */
   }
 
   75% {
     opacity: 0.3;
     margin-top: 0%;
-    /* margin-bottom: 4%; */
   }
   100% {
     opacity: 1;
     margin-top: 0%;
-    /* margin-bottom: 4%; */
   }
 }
-
-/* @media (max-width: 1251px) {
-
-} */
 
 @media (max-width: 1251px) {
   .HomeTitleText {
@@ -379,7 +363,6 @@
 
   .titleInnerFlex {
     padding-bottom: 7%;
-    /* animation: downArrowMedia 1.2s linear 0s infinite none; */
   }
 
   .titleText {
@@ -417,32 +400,6 @@
   }
 }
 
-/* 
-@keyframes typing {
-  0% {
-    width: 0%;
-  }
-
-  5% {
-    width: 6%;
-  }
-
-  25% {
-    width: 6%;
-  }
-
-  45% {
-    width: 38%;
-  }
-  65% {
-    width: 38%;
-  }
-
-  100% {
-    width: 87%;
-  }
-} */
-
 @media (max-width: 992px) {
   .titleText {
     font-size: 106px;
@@ -460,31 +417,7 @@
   .HomeTitleText {
     font-size: 20px;
   }
-  /* 
-  @keyframes typing {
-    0% {
-      width: 0%;
-    }
 
-    5% {
-      width: 8%;
-    }
-
-    25% {
-      width: 8%;
-    }
-
-    45% {
-      width: 41%;
-    }
-    65% {
-      width: 41%;
-    }
-
-    100% {
-      width: 96%;
-    } */
-  /* } */
   .HomeContainer {
     max-width: 590px;
   }
@@ -547,40 +480,13 @@
 
 @media (max-width: 652px) {
   .titleText {
-    /* font-size: 100px; */
     margin-bottom: 16%;
     margin-top: 5%;
   }
   .HomeTitleTextTop {
     font-size: 40px;
   }
-  /* 
-  @keyframes typing {
-    0% {
-      width: 0%;
-    }
 
-    5% {
-      width: 8%;
-    }
-
-    25% {
-      width: 8%;
-    }
-
-    45% {
-      width: 41%;
-    }
-    65% {
-      width: 41%;
-    }
-    95% {
-      width: 100%;
-    }
-    100% {
-      width: 100%;
-    }
-  } */
   .HomeInnerContainer {
     justify-content: center;
   }
@@ -595,9 +501,6 @@
 }
 
 @media (max-width: 631px) {
-  /* .titleText {
-    font-size: 64px;
-  } */
   .emptyPersonalMessage {
     font-size: 20px;
   }

@@ -3,7 +3,7 @@ import logos from "../../assets/images/logos";
 import './MyStack.css'
 
 
-export const MyStack = () => {
+const MyStack = () => {
 
     const { react, vue, vuetify, git, mongo, css, html, redux, JS } = logos
 
@@ -13,7 +13,7 @@ export const MyStack = () => {
 
         <div className='myStackContainer'>
             <div className='myStackInnerContainer'>
-                {logoArray.map((v, i) => (<div className='singleStack' style={{ animation: `singleStack 1s linear ${i / 1.1}s infinite forwards` }
+                {logoArray.map((v, i) => (<div className='singleStack' key={v.src} style={{ animation: `singleStack 1s linear ${i / 1.1}s infinite forwards` }
                 }>
                     <img
                         className='stackLogo'
@@ -28,3 +28,4 @@ export const MyStack = () => {
         </div >
     )
 }
+export default MyStack

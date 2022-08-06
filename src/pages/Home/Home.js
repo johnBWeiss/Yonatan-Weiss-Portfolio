@@ -35,32 +35,9 @@ const HomeContainer = () => {
     const handleScroll = () => {
         const position = window.pageYOffset;
         setScrollPosition(position);
-        // if (
-        //     window.innerHeight + window.scrollY + 0.5 >=
-        //     document.body.offsetHeight
-        // )
-        //  {
-        //     setShowProjects(true)
-        //     setMyProjectsEffect('showProjects')
-        //     setShowMore(false)
-        // }
-        // else {
-        //     setShowProjects(false)
-        //     setShowMore(true)
-        // }
-
-        console.log(window.scrollY);
-        console.log(window.innerHeight);
-
-        console.log(ArrowRef?.current?.offsetTop);
-        console.log(showProjects);
-        console.log(document.body.offsetHeight);
-
-
-
 
         if (
-            window.scrollY - 2 <=
+            window?.scrollY - 2 <=
             0
         ) {
             setShowProjects(false)
@@ -68,7 +45,7 @@ const HomeContainer = () => {
             // }
         }
         if (
-            window.scrollY >=
+            window?.scrollY >=
             ArrowRef?.current?.offsetTop
 
         ) {
@@ -85,7 +62,7 @@ const HomeContainer = () => {
 
         }
         if (
-            window.innerHeight + window.scrollY - 550 >=
+            window?.innerHeight + window?.scrollY - 550 >=
             AboutRef?.current?.offsetTop
 
         ) {
@@ -98,25 +75,12 @@ const HomeContainer = () => {
         }
 
 
-        // if (
-        //     window.scrollY >
-        //     document.body.offsetHeight
-
-        //     // (window.innerHeight - 400)
-        // ) {
-        //     setSideBarClass('sideBarContainer')
-        // }
-
-        // else {
-        //     setSideBarClass('noShowSideBar')
-        // }
 
         if (
-            window.scrollY
-            //  + 450 
+            window?.scrollY
             >=
-            stackRef?.current?.offsetTop || window.scrollY + window.innerHeight + 100 >=
-            document.body.offsetHeight
+            stackRef?.current?.offsetTop || window?.scrollY + window?.innerHeight + 100 >=
+            document?.body?.offsetHeight
         ) {
             setSideBarClass('noShowSideBar')
         }
@@ -124,10 +88,10 @@ const HomeContainer = () => {
     };
 
     useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
+        window?.addEventListener("scroll", handleScroll);
 
         return () => {
-            window.removeEventListener("scroll", handleScroll);
+            window?.removeEventListener("scroll", handleScroll);
         };
     }, []);
 

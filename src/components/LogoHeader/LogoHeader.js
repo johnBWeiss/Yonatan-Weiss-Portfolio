@@ -16,6 +16,7 @@ const LogoHeader = (refs) => {
             href={v.link}
             target="_blank"
             rel="noreferrer noopener"
+            key={v.src}
           >
             <img
               src={v.src}
@@ -28,12 +29,14 @@ const LogoHeader = (refs) => {
           {footer.map((v, i) => (<a
             target="_blank"
             rel="noreferrer noopener"
+            key={v.src}
           >
             <img
               onClick={() => { if (refs.refs[i] === '#top') { window.scrollTo({ top: 0, left: 0, behavior: "smooth" }) } refs.refs[i]?.current?.scrollIntoView() }}
               src={v.src}
               alt={v.title}
               title={v.title}
+              key={v.src}
               className='headerLogo'
             />
           </a>))}
@@ -41,6 +44,7 @@ const LogoHeader = (refs) => {
             href={v.link}
             target="_blank"
             rel="noreferrer noopener"
+            key={v.src}
 
           >
             <img

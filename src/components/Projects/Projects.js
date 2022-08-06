@@ -6,7 +6,7 @@ import logos from '../../assets/images/logos'
 import ReactPlayer from "react-player"
 import './Projects.css'
 
-export const Projects = (upgrades) => {
+const Projects = (upgrades) => {
     const { fatherPopUpHandler } = upgrades
     const { github, info, live } = logos
     // const [showPopUp, setShowPopUp] = useState(true)
@@ -25,7 +25,7 @@ export const Projects = (upgrades) => {
 
             {videosList.map((v) => (
 
-                <div className='singleItem'>
+                <div className='singleItem' key={v.title}>
                     <div className='projectTitle'>{v.title}</div>
                     <div className='frameworkLogoContainer'>
                         <img
@@ -75,21 +75,8 @@ export const Projects = (upgrades) => {
 
             )}
 
-            {/* {showPopUp && (
-                <div className='popUp' onClick={projectInfoPopUpHandler}>
-                    <div className='popUpInnerContainer'>
-                        <div className='popUpTitle'>tutle here</div>
-                        <div className='upperPopUpContent'>
-                            <img
-                                        className='popUpImage'
-                                        src={ }
-                                        alt="pic"
-                                    />
-                            <div className='popUpDescription'>
-                                'title here'                            </div>
-                        </div>
-                    </div>
-                </div>
-            )} */}
+
         </div>)
 }
+
+export default Projects

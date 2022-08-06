@@ -16,7 +16,6 @@
 
 .stackLogo {
   height: 60px;
-  /* width: 60px; */
   object-fit: scale-down;
 }
 
@@ -29,7 +28,6 @@
   background-image: url("../../assets/images/projBackground.jpg");
   padding: 2%;
   border-radius: 20%;
-  /* animation: singleStack 0.5s linear 3s 1 forwards; */
 }
 
 @keyframes singleStack {

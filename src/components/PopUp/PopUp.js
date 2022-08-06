@@ -3,7 +3,7 @@ import './PopUp.css'
 import ReactPlayer from "react-player"
 
 
-export const PopUp = (popUP) => {
+const PopUp = (popUP) => {
     const { fathershowPopUpHandler, content } = popUP
     const showPopUpHandler = () => fathershowPopUpHandler()
 
@@ -15,7 +15,8 @@ export const PopUp = (popUP) => {
                     <div className='playerContainer'>
                         <ReactPlayer url={content.src} playing={true}
                             loop={true} controls={false}
-                            muted={true} height={'100%'} width={'100%'} ></ReactPlayer></div>
+                            muted={true} height={'100%'} width={'100%'} ></ReactPlayer>
+                    </div>
                     <div className='popUpDescription'>
                         {content.description}                           </div>
                 </div>
@@ -23,3 +24,4 @@ export const PopUp = (popUP) => {
         </div>
     )
 }
+export default PopUp

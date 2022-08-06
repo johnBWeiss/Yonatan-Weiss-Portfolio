@@ -50,8 +50,6 @@
 .singleSideBar:hover {
   border-bottom: 1px solid white;
   cursor: pointer;
-
-  /* transition: border 0.8s; */
 }
 
 .sideBarLogo {

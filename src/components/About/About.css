@@ -12,7 +12,6 @@
 .noShowAbout {
   width: 53%;
   border-radius: 5%;
-  /* background-color: transparent; */
   opacity: 0;
   margin-bottom: 8%;
 }
@@ -143,8 +142,6 @@
   .AboutContainer {
     width: 400px;
     height: 670px;
-    /* padding-top: 2%; */
-    /* padding-bottom: 2%; */
   }
   .aboutSingleItem {
     gap: 30px;
@@ -238,10 +235,6 @@
   }
 
   .aboutInnerContainer {
-    /* display: flex;
-    flex-direction: column;
-    padding: 6%;
-    width: 88%; */
     gap: 28px;
   }
   .aboutSingleItem {

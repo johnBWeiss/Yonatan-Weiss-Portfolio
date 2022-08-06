@@ -4,7 +4,7 @@ import './SideBar.css'
 
 
 
-export const SideBar = (animation) => {
+const SideBar = (animation) => {
     const { home, linkedIn, CV, info, tech, projects } = logos
 
     const logoArray = [home, tech, info, projects, linkedIn, CV]
@@ -17,6 +17,7 @@ export const SideBar = (animation) => {
                 onClick={() => { if (animation.refs[i] === '#top') { window.scrollTo({ top: 0, left: 0, behavior: "smooth" }) } if (!v.link) { animation.refs[i]?.current?.scrollIntoView() } }}
                 target="_blank"
                 rel="noreferrer noopener"
+                key={v.src}
             >
 
                 <img
@@ -34,3 +35,5 @@ export const SideBar = (animation) => {
         </div>
     )
 }
+
+export default SideBar
