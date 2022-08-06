@@ -113,7 +113,9 @@ const HomeContainer = () => {
             <div className='HomeContainer'>
                 <div className='titleInnerFlex'>
                     <div className='HomeTitleOverlay'>
-                        <div className='HomeTitleText'>Hi, I am Yonatan, a Full Stack Developer</div>
+                        <div className='HomeTitleTextTop'>Hi, I am Yonatan,</div>
+                        <div className='HomeTitleTextBottom'>a Full Stack Developer</div>
+
                     </div>
                 </div>
                 {<div className='introHeaderContainer'>

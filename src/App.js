@@ -1,8 +1,5 @@
 import './App.css';
-import Login from './pages/Login/Login'
 import Home from './pages/Home/Home';
-import LogoHeader from './components/LogoHeader/LogoHeader';
-// import background from './assets/images/bannerImage1.jpg'
 import background from './assets/images/BackgroundStripesBright.png'
 
 

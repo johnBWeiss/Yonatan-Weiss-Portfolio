@@ -1,5 +1,4 @@
 import github from './logos/github.png'
-import server from './logos/1.png'
 import linkedIn from './logos/linkedIn.png'
 import angular from '../../assets/images/logos/angular.png'
 import react from '../../assets/images/logos/react.png'
@@ -23,8 +22,7 @@ import hardworker from '../../assets/images/logos/hardworker.png'
 import building from '../../assets/images/logos/building.png'
 import responsive from '../../assets/images/logos/responsive.png'
 import developer from '../../assets/images/logos/developer.png'
-import crown from '../../assets/images/logos/crown.png'
-import YCV from '../../assets/Yonatan Full Stack CV.pdf'
+import YCV from '../../assets/Yonatan React Developer CV.pdf'
 import projects from '../../assets/images/logos/projects.png'
 
 
@@ -33,7 +31,8 @@ import projects from '../../assets/images/logos/projects.png'
 
 
 const logos = {
-    projects: { src: projects, title: "projects" }, developer: { src: developer, title: "Experienced with React, Redux, Node, Git " }, crown: { src: crown, title: "Motivated to be CSS royalty" }, responsive: { src: responsive, title: "Responsive, Mobile first layout design" },
+    projects: { src: projects, title: "projects" }, developer: { src: developer, title: "Experienced with React, Redux, Node, Git " },
+    responsive: { src: responsive, title: "Responsive, Mobile first layout design" },
     building: { src: building, title: "Driven to build every project to completion" }, creativity: { src: creativity, title: "Creative with a great passion for front end design" }, location: {
         src: location, title: 'Open for work in the Jerusalem or Tel Aviv area'
     }, tech: { src: tech, title: 'Tech' }, home: { src: home, title: 'Home' },
@@ -42,7 +41,7 @@ const logos = {
     html: { src: html, title: 'HTML5' },
     redux: { src: redux, title: 'Redux' }, mongo: { src: mongo, title: 'Mongo' },
     vuetify: { src: vuetify, title: 'Vuetify' }, github: { src: github, title: 'Github', link: 'https://github.com/johnBWeiss' },
-    server, linkedIn: { src: linkedIn, title: 'Linkedin', link: 'https://bit.ly/3blkAK3' }, react: { src: react, title: 'React' }, JS: { src: JS, title: 'JavaScript' }, angular, vue: { src: vue, title: 'Vue' },
+    linkedIn: { src: linkedIn, title: 'Linkedin', link: 'https://bit.ly/3blkAK3' }, react: { src: react, title: 'React' }, JS: { src: JS, title: 'JavaScript' }, angular, vue: { src: vue, title: 'Vue' },
     mail: { src: mail, title: 'mail', link: `mailto: yoniw7@gmail.com` }, info: { src: info, title: 'info' }, live, CV:
         { src: CV, title: 'Resume', link: YCV }
 

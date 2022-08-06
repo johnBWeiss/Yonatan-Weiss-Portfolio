@@ -125,6 +125,7 @@
   .singleSideBar:hover {
     transform: scale(120%);
     transition: 0.2s;
+    border-bottom: 1px solid transparent;
   }
 
   .singleSideBar {

@@ -81,7 +81,7 @@
   }
 }
 
-.HomeTitleText {
+.HomeTitleTextTop {
   color: gold;
   opacity: 0;
   font-family: "Righteous", cursive;
@@ -91,9 +91,105 @@
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
-  animation: typing 14s steps(30, end) infinite,
+  animation: typing 10s steps(20, end) infinite,
     blink-caret 0.8s step-end infinite;
   animation-delay: 2.5s;
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+
+  5% {
+    width: 15%;
+  }
+
+  25% {
+    width: 15%;
+  }
+
+  45% {
+    width: 98%;
+  }
+
+  100% {
+    width: 98%;
+  }
+}
+
+@keyframes blink-caret {
+  0% {
+    opacity: 1;
+
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+.HomeTitleTextBottom {
+  color: gold;
+  font-family: "Righteous", cursive;
+  font-size: 40px;
+  opacity: 0;
+
+  animation: Bottom;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes Bottom {
+  0% {
+    opacity: 0;
+    transform: rotate(-180deg);
+  }
+  50% {
+    opacity: 0;
+
+    /* transform: rotate(0deg); */
+  }
+  60% {
+    opacity: 1;
+
+    /* transform: rotate(0deg); */
+  }
+  62% {
+    opacity: 1;
+  }
+
+  66% {
+    opacity: 0;
+    transform: rotate(-180deg);
+  }
+  70% {
+    transform: rotate(-180deg);
+    opacity: 0;
+  }
+
+  71% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+
+  76% {
+    opacity: 1;
+    transform: rotate(0deg);
+
+    /* transform: rotate(0); */
+  }
+  97% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .HomeTitleOverlay {
@@ -102,6 +198,8 @@
   z-index: -1;
   overflow: hidden;
   direction: ltr;
+  display: flex;
+  flex-direction: column;
 }
 
 .HomeContainer {
@@ -256,44 +354,6 @@
     opacity: 1;
     margin-top: 0%;
     /* margin-bottom: 4%; */
-  }
-}
-
-@keyframes typing {
-  0% {
-    width: 0%;
-  }
-
-  5% {
-    width: 8%;
-  }
-
-  25% {
-    width: 8%;
-  }
-
-  45% {
-    width: 42%;
-  }
-  65% {
-    width: 42%;
-  }
-  90% {
-    width: 100%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  0% {
-    opacity: 1;
-
-    border-color: transparent;
-  }
-  50% {
-    border-color: white;
   }
 }
 
