@@ -6,29 +6,31 @@
   border-radius: 5%;
   background-image: url("../../assets/images/aboutBackground.jpg");
   margin-bottom: 8%;
-  animation: AboutContainer 0.8s linear 0s 1 forwards;
+  animation: AboutContainer 0.3s linear 0s 1 forwards;
 }
 
 .noShowAbout {
-  width: 53%;
+  width: 900px;
   border-radius: 5%;
   opacity: 0;
   margin-bottom: 8%;
 }
 @keyframes AboutContainer {
   0% {
-    transform: translateX(100%);
+    transform: translateX(30%);
+    opacity: 0;
   }
 
   70% {
     transform: translateX(0);
   }
   87% {
-    transform: translateX(1%);
+    transform: translateX(2%);
   }
 
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
