@@ -18,7 +18,8 @@ const PopUp = (popUP) => {
                             muted={true} height={'100%'} width={'100%'} ></ReactPlayer>
                     </div>
                     <div className='popUpDescription'>
-                        {content.description}                           </div>
+                        {content.description}
+                    </div>
                 </div>
             </div>
         </div>

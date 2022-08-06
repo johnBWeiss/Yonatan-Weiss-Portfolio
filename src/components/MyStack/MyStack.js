@@ -23,9 +23,8 @@ const MyStack = () => {
                     <div className='stackTitle'>{v.title}</div>
                 </div>))
                 }
-
             </div>
-        </div >
+        </div>
     )
 }
 export default MyStack

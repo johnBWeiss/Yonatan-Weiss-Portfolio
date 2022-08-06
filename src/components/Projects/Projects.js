@@ -9,22 +9,14 @@ import './Projects.css'
 const Projects = (upgrades) => {
     const { fatherPopUpHandler } = upgrades
     const { github, info, live } = logos
-    // const [showPopUp, setShowPopUp] = useState(true)
-
-
 
     const projectInfoPopUpHandler = (v) => {
-
-        // setShowPopUp(!showPopUp)
         fatherPopUpHandler(v)
-
     }
 
     return (
         <div className='projectGalleryContainer'>
-
             {videosList.map((v) => (
-
                 <div className='singleItem' key={v.title}>
                     <div className='projectTitle'>{v.title}</div>
                     <div className='frameworkLogoContainer'>
@@ -66,16 +58,8 @@ const Projects = (upgrades) => {
 
 
                 </div>
-
-
-
-
-
             )
-
             )}
-
-
         </div>)
 }
 

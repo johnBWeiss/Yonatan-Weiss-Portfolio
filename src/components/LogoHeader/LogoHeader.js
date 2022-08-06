@@ -45,7 +45,6 @@ const LogoHeader = (refs) => {
             target="_blank"
             rel="noreferrer noopener"
             key={v.src}
-
           >
             <img
               src={v.src}

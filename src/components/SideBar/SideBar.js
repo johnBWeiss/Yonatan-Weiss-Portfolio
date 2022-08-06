@@ -19,15 +19,14 @@ const SideBar = (animation) => {
                 rel="noreferrer noopener"
                 key={v.src}
             >
-
                 <img
                     className='sideBarLogo'
                     src={v.src}
                     title=''
                     alt="" />
                 {!animation.footer && <div className='sideBarTitle'>{v.title}</div>
-                }           </a>
-
+                }
+            </a>
 
             ))
             }

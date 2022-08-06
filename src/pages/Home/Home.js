@@ -23,14 +23,10 @@ const HomeContainer = () => {
     const [showPopUp, setShowPopUp] = useState(false)
     const [popUpContent, setPopUpContent] = useState(null)
 
-
-
     const myProjects = useRef(null)
     const stackRef = useRef(null)
     const AboutRef = useRef(null)
     const ArrowRef = useRef(null)
-
-
 
     const handleScroll = () => {
         const position = window.pageYOffset;
@@ -42,7 +38,6 @@ const HomeContainer = () => {
         ) {
             setShowProjects(false)
             setShowMore(true)
-            // }
         }
         if (
             window?.scrollY >=
@@ -59,7 +54,6 @@ const HomeContainer = () => {
             setShowProjects(false)
             setShowMore(true)
             setSideBarClass('noShowSideBar')
-
         }
         if (
             window?.innerHeight + window?.scrollY - 550 >=
@@ -68,14 +62,10 @@ const HomeContainer = () => {
         ) {
             setAboutRefClass('AboutContainer')
         }
-
         else {
             setAboutRefClass(null)
 
         }
-
-
-
         if (
             window?.scrollY
             >=
@@ -107,12 +97,10 @@ const HomeContainer = () => {
     if (count === openingParagraph.length) {
         setCount(0)
     }
-
     const showPopUpHandler = (v) => {
         setShowPopUp(!showPopUp)
         setPopUpContent(v)
     }
-
     return (
         <div className='vertFlexHome'>
             <LogoHeader type={'header'} />
@@ -139,22 +127,18 @@ const HomeContainer = () => {
                     </div>
                 </div>}
                 {showMore && <img className="downArrow" src={downArrow} />}
-                {/* <div className="arrowRef" ref={ArrowRef}></div> */}
                 {!showMore && <div className={`titleText ${myProjectsEffect}`} ref={myProjects}>Projects</div>}
                 {showProjects &&
                     <div className={myProjectsEffect}>
                         <Projects fatherPopUpHandler={showPopUpHandler} />
                     </div>
                 }
-
             </div>
             {showProjects && <>
                 {<div id='test' className={`titleText`} ref={AboutRef}>About</div>}
                 <About refContainer={AboutRefClass} />
                 {<div className={`titleText ${myProjectsEffect}`} ref={stackRef}>Stack</div>}
                 <MyStack />
-
-
                 {<SideBar class={sideBarClass} refs={['#top', stackRef, AboutRef, myProjects]} />
                 }
                 <LogoHeader refs={['#top', myProjects]} type={'footer'} />
