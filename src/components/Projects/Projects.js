@@ -41,6 +41,7 @@ const Projects = (upgrades) => {
 
                         {v.live && <a
                             href={v.domain} target='_blank'
+                            rel="noreferrer"
                         ><img
                                 className='logo'
                                 src={live}
