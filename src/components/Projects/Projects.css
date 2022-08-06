@@ -13,7 +13,7 @@
   flex-wrap: wrap;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  gap: 90px 0px;
+  /* gap: 90px 0px; */
   max-width: 850px;
   padding-top: 12px;
   padding-bottom: 80px;
@@ -46,6 +46,7 @@
   padding-bottom: 80px;
   width: 350px;
   background-image: url("../../assets/images/projBackground.jpg");
+  margin-bottom: 8%;
 }
 
 .projectTitle {
