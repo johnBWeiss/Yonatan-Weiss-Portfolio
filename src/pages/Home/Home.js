@@ -28,26 +28,62 @@ const HomeContainer = () => {
     const myProjects = useRef(null)
     const stackRef = useRef(null)
     const AboutRef = useRef(null)
+    const ArrowRef = useRef(null)
 
 
 
     const handleScroll = () => {
         const position = window.pageYOffset;
         setScrollPosition(position);
+        // if (
+        //     window.innerHeight + window.scrollY + 0.5 >=
+        //     document.body.offsetHeight
+        // )
+        //  {
+        //     setShowProjects(true)
+        //     setMyProjectsEffect('showProjects')
+        //     setShowMore(false)
+        // }
+        // else {
+        //     setShowProjects(false)
+        //     setShowMore(true)
+        // }
+
+        console.log(window.scrollY);
+        console.log(window.innerHeight);
+
+        console.log(ArrowRef?.current?.offsetTop);
+        console.log(showProjects);
+        console.log(document.body.offsetHeight);
+
+
+
 
         if (
-            window.innerHeight + window.scrollY + 0.5 >=
-            document.body.offsetHeight
+            window.scrollY - 2 <=
+            0
+        ) {
+            setShowProjects(false)
+            setShowMore(true)
+            // }
+        }
+        if (
+            window.scrollY >=
+            ArrowRef?.current?.offsetTop
+
         ) {
             setShowProjects(true)
             setMyProjectsEffect('showProjects')
             setShowMore(false)
+            setSideBarClass('sideBarContainer')
+
         }
         else {
             setShowProjects(false)
             setShowMore(true)
-        }
+            setSideBarClass('noShowSideBar')
 
+        }
         if (
             window.innerHeight + window.scrollY - 550 >=
             AboutRef?.current?.offsetTop
@@ -62,19 +98,25 @@ const HomeContainer = () => {
         }
 
 
-        if (
-            window.scrollY >= (window.innerHeight - 400)
-        ) {
-            setSideBarClass('sideBarContainer')
-        }
+        // if (
+        //     window.scrollY >
+        //     document.body.offsetHeight
 
-        else {
-            setSideBarClass('noShowSideBar')
-        }
+        //     // (window.innerHeight - 400)
+        // ) {
+        //     setSideBarClass('sideBarContainer')
+        // }
+
+        // else {
+        //     setSideBarClass('noShowSideBar')
+        // }
 
         if (
-            window.scrollY + 450 >=
-            stackRef?.current?.offsetTop
+            window.scrollY
+            //  + 450 
+            >=
+            stackRef?.current?.offsetTop || window.scrollY + window.innerHeight + 100 >=
+            document.body.offsetHeight
         ) {
             setSideBarClass('noShowSideBar')
         }
@@ -118,7 +160,7 @@ const HomeContainer = () => {
 
                     </div>
                 </div>
-                {<div className='introHeaderContainer'>
+                {<div className='introHeaderContainer' ref={ArrowRef}>
                     <div className='introInnerHeaderContainer'>
                         <div className='profilePicContainer'>
                             <img
@@ -133,6 +175,7 @@ const HomeContainer = () => {
                     </div>
                 </div>}
                 {showMore && <img className="downArrow" src={downArrow} />}
+                {/* <div className="arrowRef" ref={ArrowRef}></div> */}
                 {!showMore && <div className={`titleText ${myProjectsEffect}`} ref={myProjects}>Projects</div>}
                 {showProjects &&
                     <div className={myProjectsEffect}>

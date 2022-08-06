@@ -10,7 +10,7 @@
   padding-bottom: 2.5%;
   justify-content: space-between;
   position: fixed;
-  top: 18vh;
+  bottom: 0px;
   left: 8%;
   animation: sideBar 1s linear 0s 1 forwards;
 }

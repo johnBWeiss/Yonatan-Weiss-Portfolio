@@ -1,6 +1,6 @@
 .app {
   text-align: center;
-  height: 140vh;
+  min-height: 150vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
