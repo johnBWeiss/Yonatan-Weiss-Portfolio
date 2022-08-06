@@ -394,7 +394,7 @@
 
 @media (max-width: 992px) {
   .titleText {
-    font-size: 106px;
+    font-size: 10rem;
   }
   .personalMessage {
     font-size: 28px;

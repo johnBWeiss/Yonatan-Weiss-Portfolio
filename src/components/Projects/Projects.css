@@ -120,6 +120,7 @@
   .projectGalleryContainer {
     width: 100%;
     gap: 161px 0px;
+    margin-top: 15%;
   }
 
   .singleItem {
