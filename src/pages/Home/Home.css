@@ -315,7 +315,7 @@
   }
 
   .titleText {
-    margin-bottom: 10%;
+    margin-bottom: 7%;
   }
 
   @keyframes downArrow {
@@ -438,7 +438,7 @@
 
 @media (max-width: 750px) {
   .titleText {
-    font-size: 86px;
+    font-size: 114px;
   }
   .introInnerHeaderContainer {
     width: 80%;
@@ -479,7 +479,7 @@
 
 @media (max-width: 652px) {
   .titleText {
-    font-size: 65px;
+    /* font-size: 100px; */
     margin-bottom: 16%;
     margin-top: 5%;
   }
@@ -527,9 +527,9 @@
 }
 
 @media (max-width: 631px) {
-  .titleText {
+  /* .titleText {
     font-size: 64px;
-  }
+  } */
   .emptyPersonalMessage {
     font-size: 20px;
   }
@@ -550,7 +550,7 @@
 
 @media (max-width: 571px) {
   .titleText {
-    font-size: 57px;
+    font-size: 85px;
   }
   .emptyPersonalMessage {
     font-size: 18px;
@@ -569,6 +569,9 @@
 }
 
 @media (max-width: 483px) {
+  .titleText {
+    font-size: 70px;
+  }
   .HomeTitleText {
     font-size: 13px;
   }

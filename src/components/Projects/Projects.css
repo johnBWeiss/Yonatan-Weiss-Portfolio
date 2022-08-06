@@ -5,7 +5,8 @@
   gap: 90px 0px;
   max-width: 850px;
   padding-top: 12px;
-  padding-bottom: 125px;
+  padding-bottom: 80px;
+  margin-top: 6%;
   z-index: 2;
   flex-direction: row-reverse;
 }
@@ -71,7 +72,7 @@
   .projectGalleryContainer {
     gap: 70px 0px;
     width: 800px;
-    padding-bottom: 39px;
+    padding-bottom: 63px;
   }
 }
 

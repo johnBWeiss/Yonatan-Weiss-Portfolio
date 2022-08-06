@@ -59,7 +59,7 @@
 
 @media (max-width: 1500px) {
   .AboutContainer {
-    width: 1000px;
+    width: 950px;
   }
 
   .noShowAbout {
@@ -84,57 +84,157 @@
   }
 }
 
-@media (max-width: 1366px) {
-  .AboutContainer {
-    width: 75%;
-  }
-
-  .noShowAbout {
-    width: 75%;
-  }
-}
-
-@media (max-width: 1244px) {
-  .AboutContainer {
-    width: 79%;
-  }
-
-  .noShowAbout {
-    width: 78%;
-  }
-}
-
 @media (max-width: 1208px) {
   .AboutContainer {
-    width: 65%;
+    width: 800px;
   }
 
   .noShowAbout {
-    width: 65%;
+    width: 800px;
+  }
+
+  .aboutLogoTitle {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 1065px) {
+  .AboutContainer {
+    width: 650px;
+  }
+
+  .noShowAbout {
+    width: 650px;
   }
 
   .aboutLogoTitle {
     font-size: 1.4rem;
   }
 }
-@media (max-width: 1208px) {
+
+@media (max-width: 881px) {
   .AboutContainer {
-    width: 65%;
+    width: 500px;
+    height: 700px;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
 
   .noShowAbout {
-    width: 65%;
+    width: 500px;
+    height: 700px;
   }
 
   .aboutLogoTitle {
-    /* font-size: 1.6rem; */
+    font-size: 1.7rem;
+    width: 80%;
+  }
+  .aboutInnerContainer {
+    gap: 47px;
+  }
+
+  .aboutSingleItem {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 710px) {
+  .AboutContainer {
+    width: 400px;
+    height: 670px;
+    /* padding-top: 2%; */
+    /* padding-bottom: 2%; */
+  }
+  .aboutSingleItem {
+    gap: 30px;
+  }
+
+  .noShowAbout {
+    width: 400px;
+    height: 670px;
+  }
+
+  .aboutLogoTitle {
+    font-size: 1.4rem;
+    width: 78%;
+  }
+}
+
+@media (max-width: 605px) {
+  .AboutContainer {
+    width: 370px;
+    height: 650px;
+  }
+
+  .noShowAbout {
+    width: 370px;
+    height: 660px;
+  }
+
+  .aboutLogoTitle {
+    font-size: 1.2rem;
+  }
+  .aboutInnerContainer {
+    gap: 47px;
+  }
+}
+
+@media (max-width: 605px) {
+  .AboutContainer {
+    width: 340px;
+  }
+
+  .noShowAbout {
+    width: 340px;
+  }
+}
+
+@media (max-width: 537px) {
+  .AboutContainer {
+    width: 300px;
+    height: 650px;
+  }
+
+  .noShowAbout {
+    width: 340px;
+    height: 650px;
+  }
+
+  .aboutLogoTitle {
+    font-size: 1.15rem;
+  }
+
+  .aboutSingleItem {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 447px) {
+  .AboutContainer {
+    width: 250px;
+    height: 625px;
+  }
+
+  .noShowAbout {
+    width: 250px;
+    height: 625px;
+  }
+
+  .aboutLogoTitle {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 408px) {
+  .AboutContainer {
+    width: 250px;
+    height: 415px;
+  }
+
   .noShowAbout {
-    width: 215px;
-    margin-bottom: 8%;
+    width: 250px;
+    height: 625px;
   }
 
   .aboutInnerContainer {
@@ -156,6 +256,6 @@
 
   .aboutLogoTitle {
     font-size: 12px;
-    max-width: 70%;
+    max-width: 80%;
   }
 }

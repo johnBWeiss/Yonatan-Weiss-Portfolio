@@ -131,7 +131,7 @@ const HomeContainer = () => {
                     </div>
                 </div>}
                 {showMore && <img className="downArrow" src={downArrow} />}
-                {!showMore && <div className={`titleText ${myProjectsEffect}`} ref={myProjects}>My Projects</div>}
+                {!showMore && <div className={`titleText ${myProjectsEffect}`} ref={myProjects}>Projects</div>}
                 {showProjects &&
                     <div className={myProjectsEffect}>
                         <Projects fatherPopUpHandler={showPopUpHandler} />
@@ -142,7 +142,7 @@ const HomeContainer = () => {
             {showProjects && <>
                 {<div id='test' className={`titleText`} ref={AboutRef}>About</div>}
                 <About refContainer={AboutRefClass} />
-                {<div className={`titleText ${myProjectsEffect}`} ref={stackRef}>My Stack</div>}
+                {<div className={`titleText ${myProjectsEffect}`} ref={stackRef}>Stack</div>}
                 <MyStack />
 
 

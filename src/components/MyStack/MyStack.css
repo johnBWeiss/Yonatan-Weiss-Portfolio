@@ -56,24 +56,58 @@
   color: white;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 942px) {
   .stackLogo {
-    height: 20px;
-    /* width: 60px; */
+    height: 50px;
     object-fit: scale-down;
   }
+}
+@media (max-width: 840px) {
+  .stackLogo {
+    height: 40px;
+  }
+}
 
-  .singleStack {
-    font-size: 0.3rem;
+@media (max-width: 780px) {
+  .stackLogo {
+    height: 32px;
+  }
+}
+
+@media (max-width: 700px) {
+  .stackLogo {
+    height: 40px;
   }
 
+  .stackTitle {
+    font-size: 0px;
+  }
+
+  .singleStack {
+    gap: 0px;
+  }
+}
+
+@media (max-width: 643px) {
+  .stackLogo {
+    height: 26px;
+  }
+}
+
+@media (max-width: 550px) {
   .myStackInnerContainer {
-    width: 60%;
-
-    gap: 6px;
+    gap: 5px;
   }
+}
 
-  .singleStack {
-    width: 25px;
+@media (max-width: 412px) {
+  .myStackInnerContainer {
+    gap: 3px;
+  }
+}
+
+@media (max-width: 374px) {
+  .stackLogo {
+    height: 22px;
   }
 }
