@@ -58,7 +58,7 @@
   -ms-flex-pack: center;
   justify-content: space-between;
   /* gap: 70px; */
-  min-width: 90%;
+  min-width: 60%;
 }
 
 .headerLogo {
@@ -164,7 +164,7 @@
   }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1000px) {
   .headerInnerWidth {
     -webkit-animation: slideInFromLeft 0.9s ease-in 0s 1 none;
     animation: slideInFromLeft 0.9s ease-in 0s 1 none;
@@ -173,6 +173,10 @@
     -webkit-animation: rocked 0.7s linear 0.85s 1 none,
       logoRoll 0.9s linear 0s 1 none;
     animation: rocked 0.7s linear 0.85s 1 none, logoRoll 0.9s linear 0s 1 none;
+  }
+
+  .logoContainerHeader {
+    min-width: 80%;
   }
 }
 @media (max-width: 695px) {
