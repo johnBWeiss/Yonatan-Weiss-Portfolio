@@ -5,6 +5,7 @@
   align-items: center;
   border-radius: 5%;
   background-image: url("../../assets/images/aboutBackground.jpg");
+  background-color: black;
   margin-bottom: 8%;
   animation: AboutContainer 0.4s linear 0s 1 forwards;
 }
