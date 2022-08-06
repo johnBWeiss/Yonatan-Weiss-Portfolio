@@ -17,7 +17,7 @@
 }
 @keyframes AboutContainer {
   0% {
-    transform: translateX(15%);
+    transform: translateX(14%);
     opacity: 0;
   }
 
