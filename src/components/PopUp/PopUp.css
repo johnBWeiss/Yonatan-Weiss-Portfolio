@@ -183,3 +183,19 @@
     gap: 22px;
   }
 }
+
+@media (max-height: 500px) {
+  .popUpDescription {
+    font-size: 0.7rem;
+    line-height: 18px;
+  }
+
+  .popUpTitle {
+    font-size: 3.5rem;
+  }
+
+  .upperPopUpContent {
+    width: 30%;
+    gap: 20px;
+  }
+}
