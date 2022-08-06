@@ -105,7 +105,6 @@ const HomeContainer = () => {
     const showPopUpHandler = (v) => {
         setShowPopUp(!showPopUp)
         setPopUpContent(v)
-        // console.log(v);
     }
 
     return (

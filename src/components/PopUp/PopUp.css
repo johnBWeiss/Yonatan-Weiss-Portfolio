@@ -42,42 +42,113 @@
 }
 
 .upperPopUpContent {
-  /* width: 600px;
-  height: 350px; */
   width: 90%;
   display: flex;
   justify-content: space-between;
   gap: 60px;
+  margin-bottom: 5%;
 }
 
 .popUpDescription {
   color: white;
-  font-size: 2rem;
+  font-size: 1.6em;
   text-align: left;
   align-self: center;
   width: 50%;
+  line-height: 33px;
 }
 .popUpTitle {
   font-size: 8rem;
   color: goldenrod;
   font-family: "Righteous", cursive;
+  margin-bottom: 5%;
 }
 
 .playerContainer {
-  /* border: goldenrod 4px solid; */
+  width: 50%;
 }
 
-@media (max-width: 667px) {
-  .popUpImage {
-    width: 400px;
+@media (max-width: 1476px) {
+  .popUpDescription {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1276px) {
+  .popUpTitle {
+    margin-bottom: 0%;
+    margin-top: 5%;
+  }
+  .popUpDescription {
+    font-size: 1.2rem;
+    width: 100%;
+    align-self: center;
   }
 
   .upperPopUpContent {
-    width: 400px;
-    height: 350px;
+    flex-direction: column;
+    width: 61%;
   }
 
+  .playerContainer {
+    width: 100%;
+    align-self: center;
+  }
+}
+
+@media (max-width: 1050px) {
+  .popUpDescription {
+    font-size: 1.1rem;
+  }
+  .upperPopUpContent {
+    width: 81%;
+  }
+}
+
+@media (max-width: 872px) {
+  .popUpDescription {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .upperPopUpContent {
+    width: 80%;
+    gap: 40px;
+  }
+
+  .popUpTitle {
+    font-size: 6rem;
+  }
+
+  .popUpDescription {
+    font-size: 1.2rem;
+    width: 95%;
+  }
+}
+@media (max-width: 640px) {
   .popUpInnerContainer {
-    width: 400px;
+    width: 97%;
+  }
+}
+
+@media (max-width: 500px) {
+  .popUpTitle {
+    margin-bottom: 5%;
+  }
+
+  .popUpDescription {
+    font-size: 1.1rem;
+    margin-top: 4%;
+  }
+}
+
+@media (max-width: 450px) {
+  .popUpDescription {
+    font-size: 1.15rem;
+  }
+
+  .popUpTitle {
+    font-size: 5rem;
   }
 }

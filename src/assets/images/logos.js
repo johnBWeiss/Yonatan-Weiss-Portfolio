@@ -40,7 +40,7 @@ const logos = {
     css: { src: css, title: 'CSS3' }, git: { src: git, title: 'Git' },
     hardworker: { src: hardworker, title: 'Extremely hard worker with elite accountability' }, git: { src: git, title: 'Git' },
     html: { src: html, title: 'HTML5' },
-    redux: { src: redux, title: 'Redux-TK' }, mongo: { src: mongo, title: 'MongoDB' },
+    redux: { src: redux, title: 'Redux' }, mongo: { src: mongo, title: 'Mongo' },
     vuetify: { src: vuetify, title: 'Vuetify' }, github: { src: github, title: 'Github', link: 'https://github.com/johnBWeiss' },
     server, linkedIn: { src: linkedIn, title: 'Linkedin', link: 'https://bit.ly/3blkAK3' }, react: { src: react, title: 'React' }, JS: { src: JS, title: 'JavaScript' }, angular, vue: { src: vue, title: 'Vue' },
     mail: { src: mail, title: 'mail', link: `mailto: yoniw7@gmail.com` }, info: { src: info, title: 'info' }, live, CV:

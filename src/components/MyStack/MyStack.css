@@ -64,6 +64,16 @@
   }
 
   .singleStack {
-    font-size: 10px;
+    font-size: 0.3rem;
+  }
+
+  .myStackInnerContainer {
+    width: 60%;
+
+    gap: 6px;
+  }
+
+  .singleStack {
+    width: 25px;
   }
 }

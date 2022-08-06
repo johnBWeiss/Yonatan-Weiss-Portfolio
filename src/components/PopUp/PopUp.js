@@ -15,7 +15,7 @@ export const PopUp = (popUP) => {
                     <div className='playerContainer'>
                         <ReactPlayer url={content.src} playing={true}
                             loop={true} controls={false}
-                            muted={true} width={'100%'} ></ReactPlayer></div>
+                            muted={true} height={'100%'} width={'100%'} ></ReactPlayer></div>
                     <div className='popUpDescription'>
                         {content.description}                           </div>
                 </div>

@@ -71,6 +71,7 @@
   .projectGalleryContainer {
     gap: 70px 0px;
     width: 800px;
+    padding-bottom: 39px;
   }
 }
 
