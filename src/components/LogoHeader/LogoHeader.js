@@ -20,15 +20,14 @@ const LogoHeader = (refs) => {
           >
             <img
               src={v.src}
+              alt='logo'
               className='headerLogo'
             />
           </a>))}
         </div>}
         {refs.type === 'footer' && <div className='logoContainerHeader'>
 
-          {footer.map((v, i) => (<a
-            target="_blank"
-            rel="noreferrer noopener"
+          {footer.map((v, i) => (<div
             key={v.src}
           >
             <img
@@ -39,7 +38,7 @@ const LogoHeader = (refs) => {
               key={v.src}
               className='headerLogo'
             />
-          </a>))}
+          </div>))}
           {header.map((v, i) => (<a
             href={v.link}
             target="_blank"

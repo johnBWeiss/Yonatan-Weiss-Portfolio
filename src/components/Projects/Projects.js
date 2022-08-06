@@ -32,7 +32,9 @@ const Projects = (upgrades) => {
                     <div className='logoContainer'>
                         <a
 
-                            href={v.link} target='_blank'>
+                            href={v.link} target='_blank'
+                            rel="noreferrer">
+
                             <img
                                 className='logo'
                                 src={github.src}

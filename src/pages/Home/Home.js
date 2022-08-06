@@ -12,7 +12,7 @@ import PopUp from "../../components/PopUp/PopUp";
 
 const HomeContainer = () => {
 
-    const [scrollPosition, setScrollPosition] = useState(0);
+    // const [scrollPosition, setScrollPosition] = useState(0);
     const [showProjects, setShowProjects] = useState(false);
     const [showMore, setShowMore] = useState(true);
     const [myProjectsEffect, setMyProjectsEffect] = useState('noShowProjects');
@@ -29,8 +29,8 @@ const HomeContainer = () => {
     const ArrowRef = useRef(null)
 
     const handleScroll = () => {
-        const position = window.pageYOffset;
-        setScrollPosition(position);
+        // const position = window.pageYOffset;
+        // setScrollPosition(position);
 
         if (
             window?.scrollY - 2 <=
@@ -126,7 +126,7 @@ const HomeContainer = () => {
                         </div>
                     </div>
                 </div>}
-                {showMore && <img className="downArrow" src={downArrow} />}
+                {showMore && <img className="downArrow" src={downArrow} alt='downArrow' />}
                 {!showMore && <div className={`titleText ${myProjectsEffect}`} ref={myProjects}>Projects</div>}
                 {showProjects &&
                     <div className={myProjectsEffect}>
