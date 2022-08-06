@@ -224,6 +224,7 @@
   .singleItem {
     border-radius: 40px;
     width: 350px;
+    height: 360px;
   }
 
   .projectTitle {
