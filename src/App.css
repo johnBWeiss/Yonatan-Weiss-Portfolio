@@ -22,11 +22,8 @@ body {
   background-color: rgb(227, 227, 227);
   background-color: #f3f2ef;
   background-color: rgb(58, 15, 15);
-  /* background-image: url("./assets/images/bannerImage1.jpg"); */
 }
-/* * {
-  font-family: "Libre Baskerville", serif;
-} */
+
 html {
   scroll-behavior: smooth;
 }

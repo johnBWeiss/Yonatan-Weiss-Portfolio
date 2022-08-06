@@ -2,13 +2,13 @@ import React, { useEffect, useState, useRef } from "react";
 import './Home.css';
 import profilePic from '../../assets/images/profileS.png'
 import LogoHeader from '../../components/LogoHeader/LogoHeader';
-import { About } from "../../components/About/About";
-import { Projects } from '../../components/Projects/Projects';
+import About from "../../components/About/About";
+import Projects from '../../components/Projects/Projects';
 import openingParagraph from '../../assets/text/text'
 import downArrow from '../../assets/images/logos/downArrow.png'
-import { MyStack } from "../../components/MyStack/MyStack";
-import { SideBar } from "../../components/SideBar/SideBar";
-import { PopUp } from "../../components/PopUp/PopUp";
+import MyStack from "../../components/MyStack/MyStack";
+import SideBar from "../../components/SideBar/SideBar";
+import PopUp from "../../components/PopUp/PopUp";
 
 const HomeContainer = () => {
 
