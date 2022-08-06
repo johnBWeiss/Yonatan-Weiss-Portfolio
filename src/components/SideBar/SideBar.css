@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 20px;
+  height: 90%;
   background-color: black;
   background-image: url("../../assets/images/projBackground.jpg");
   align-items: center;
@@ -10,7 +11,7 @@
   padding-bottom: 2.5%;
   justify-content: space-between;
   position: fixed;
-  bottom: 0px;
+  bottom: 8%;
   left: 8%;
   animation: sideBar 1s linear 0s 1 forwards;
 }
@@ -161,14 +162,14 @@
     }
 
     50% {
-      height: 500px;
+      height: 70%;
       width: 0px;
       transform: translateX(-30%);
     }
     100% {
       transform: translateX(0);
       width: 0px;
-      height: 500px;
+      height: 70%;
     }
   }
 
@@ -182,11 +183,11 @@
       transform: rotate(0deg);
     }
     80% {
-      height: 60px;
+      height: 70px;
       transform: rotate(720deg);
     }
     100% {
-      height: 60px;
+      height: 70px;
       transform: rotate(720deg);
     }
   }
