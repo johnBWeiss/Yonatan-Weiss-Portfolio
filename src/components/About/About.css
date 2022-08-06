@@ -6,7 +6,7 @@
   border-radius: 5%;
   background-image: url("../../assets/images/aboutBackground.jpg");
   margin-bottom: 8%;
-  animation: AboutContainer 0.3s linear 0s 1 forwards;
+  animation: AboutContainer 0.4s linear 0s 1 forwards;
 }
 
 .noShowAbout {
@@ -17,7 +17,7 @@
 }
 @keyframes AboutContainer {
   0% {
-    transform: translateX(30%);
+    transform: translateX(15%);
     opacity: 0;
   }
 
@@ -64,7 +64,7 @@
   }
 
   .noShowAbout {
-    width: 65%;
+    width: 950px;
   }
 
   .aboutInnerContainer {
@@ -168,7 +168,7 @@
 
   .noShowAbout {
     width: 370px;
-    height: 660px;
+    height: 650px;
   }
 
   .aboutLogoTitle {
@@ -196,7 +196,7 @@
   }
 
   .noShowAbout {
-    width: 340px;
+    width: 300px;
     height: 650px;
   }
 

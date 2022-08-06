@@ -10,7 +10,7 @@
 .background {
   z-index: -2;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   object-fit: cover;
   left: 0px;
@@ -21,7 +21,8 @@ body {
   padding: 0%;
   background-color: rgb(227, 227, 227);
   background-color: #f3f2ef;
-  background-color: rgb(58, 15, 15);
+  background-color: rgb(47, 44, 44);
+  background-image: url("./assets/images/BackgroundStripesBright.png");
 }
 
 html {
