@@ -153,3 +153,33 @@
     font-size: 5rem;
   }
 }
+
+@media (max-height: 800px) {
+  .popUpDescription {
+    font-size: 1rem;
+  }
+
+  .popUpTitle {
+    font-size: 5rem;
+  }
+
+  .upperPopUpContent {
+    width: 58%;
+    gap: 22px;
+  }
+}
+
+@media (max-height: 600px) {
+  .popUpDescription {
+    font-size: 0.7rem;
+  }
+
+  .popUpTitle {
+    font-size: 4.5rem;
+  }
+
+  .upperPopUpContent {
+    width: 40%;
+    gap: 22px;
+  }
+}
