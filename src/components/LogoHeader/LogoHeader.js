@@ -4,7 +4,7 @@ import logos from "../../assets/images/logos";
 
 
 const LogoHeader = (refs) => {
-  const { linkedIn, github, mail, info, CV, home, tech, projects } = logos
+  const { linkedIn, github, mail, CV, home, projects } = logos
   const header = [linkedIn, CV, github, mail]
   const footer = [home, projects]
 

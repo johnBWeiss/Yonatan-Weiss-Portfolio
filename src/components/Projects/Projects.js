@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import videosList from '../../assets/videos/videos'
 import logos from '../../assets/images/logos'
 

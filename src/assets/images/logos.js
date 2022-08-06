@@ -36,7 +36,7 @@ const logos = {
     building: { src: building, title: "Driven to build every project to completion" }, creativity: { src: creativity, title: "Creative with a great passion for front end design" }, location: {
         src: location, title: 'Open for work in the Jerusalem or Tel Aviv area'
     }, tech: { src: tech, title: 'Tech' }, home: { src: home, title: 'Home' },
-    css: { src: css, title: 'CSS3' }, git: { src: git, title: 'Git' },
+    css: { src: css, title: 'CSS3' },
     hardworker: { src: hardworker, title: 'Extremely hard worker with elite accountability' }, git: { src: git, title: 'Git' },
     html: { src: html, title: 'HTML5' },
     redux: { src: redux, title: 'Redux' }, mongo: { src: mongo, title: 'Mongo' },

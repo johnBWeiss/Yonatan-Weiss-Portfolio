@@ -3,7 +3,7 @@ import './About.css'
 import logos from '../../assets/images/logos'
 
 const About = ({ refContainer }) => {
-    const { location, creativity, hardworker, building, developer, crown, responsive } = logos
+    const { location, creativity, hardworker, building, developer, responsive } = logos
     const aboutLogos = [creativity, location, hardworker, building, developer, responsive]
     return (
         <div className={refContainer ? refContainer : 'noShowAbout'}>
