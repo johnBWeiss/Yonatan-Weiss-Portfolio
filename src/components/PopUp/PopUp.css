@@ -6,25 +6,55 @@
   top: 0px;
   background-color: black;
   background-image: url("../../assets/images/popUpBackground.jpg");
+  -o-object-fit: cover;
   object-fit: cover;
   z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-family: "Libre Baskerville", serif;
+  -webkit-animation: popdown 0.5s linear 0s 1 forwards;
   animation: popdown 0.5s linear 0s 1 forwards;
 }
-@keyframes popdown {
+@-webkit-keyframes popdown {
   0% {
+    -webkit-transform: translatey(-100%);
     transform: translatey(-100%);
   }
   70% {
+    -webkit-transform: translatey(0%);
     transform: translatey(0%);
   }
   85% {
+    -webkit-transform: translatey(-3%);
     transform: translatey(-3%);
   }
   100% {
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+  }
+}
+@keyframes popdown {
+  0% {
+    -webkit-transform: translatey(-100%);
+    transform: translatey(-100%);
+  }
+  70% {
+    -webkit-transform: translatey(0%);
+    transform: translatey(0%);
+  }
+  85% {
+    -webkit-transform: translatey(-3%);
+    transform: translatey(-3%);
+  }
+  100% {
+    -webkit-transform: translatey(0);
     transform: translatey(0);
   }
 }
@@ -34,17 +64,30 @@
 }
 
 .popUpInnerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 90%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   /* gap: 20px 20px; */
 }
 
 .upperPopUpContent {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   /* gap: 60px; */
   margin-bottom: 5%;
@@ -54,6 +97,8 @@
   color: white;
   font-size: 1.6em;
   text-align: left;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
   width: 47%;
   line-height: 33px;
@@ -83,17 +128,24 @@
   .popUpDescription {
     font-size: 1.6rem;
     width: 100%;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
     margin: 5%;
   }
 
   .upperPopUpContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 61%;
   }
 
   .playerContainer {
     width: 100%;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
   }
 }
