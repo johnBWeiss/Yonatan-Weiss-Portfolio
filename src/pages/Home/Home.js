@@ -51,12 +51,12 @@ const HomeContainer = () => {
                 setShowProjects(true)
                 setMyProjectsEffect('showProjects')
                 setShowMore(false)
-                // const scroller = () => {
-                //     console.log('scroller');
-                //     myProjects.current?.scrollIntoView()
+                const scroller = () => {
+                    console.log('scroller');
+                    myProjects.current?.scrollIntoView()
 
-                //     scroller()
-                // }
+                    scroller()
+                }
             }
 
             scrollChecker.current = true
