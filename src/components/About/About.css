@@ -81,13 +81,18 @@
   flex-direction: column;
   padding: 6%;
   width: 90%;
-  gap: 30px;
+  height: 715px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .aboutSingleItem {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 60px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .aboutLogo {
@@ -103,35 +108,25 @@
   -ms-grid-row-align: center;
   align-self: center;
   font-size: 30px;
+  width: 83%;
 }
 
 @media (max-width: 1500px) {
-  .AboutContainer {
-    width: 950px;
-  }
-
-  .noShowAbout {
-    width: 950px;
-  }
-
-  .aboutInnerContainer {
-    gap: 28px;
-  }
   .aboutSingleItem {
-    display: -webkit-box;
+    /* display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    gap: 50px;
+    display: flex; */
+    /* gap: 50px; */
   }
 
-  .aboutLogo {
+  /* .aboutLogo {
     height: 60px;
     width: 60px;
-  }
+  } */
 
-  .aboutLogoTitle {
+  /* .aboutLogoTitle {
     font-size: 2.1rem;
-  }
+  } */
 }
 
 @media (max-width: 1208px) {
@@ -150,7 +145,7 @@
 
 @media (max-width: 1065px) {
   .AboutContainer {
-    width: 650px;
+    width: 710px;
   }
 
   .noShowAbout {
@@ -158,121 +153,127 @@
   }
 
   .aboutLogoTitle {
-    font-size: 1.4rem;
+    font-size: 2.2rem;
+    width: 80%;
   }
 }
 
-@media (max-width: 881px) {
+@media (max-width: 969px) {
   .AboutContainer {
-    width: 500px;
-    height: 700px;
+    width: 600px;
+    height: 800px;
     padding-top: 2%;
     padding-bottom: 2%;
   }
 
   .noShowAbout {
-    width: 500px;
-    height: 700px;
+    width: 600px;
+    height: 800px;
   }
 
   .aboutLogoTitle {
     font-size: 1.7rem;
     width: 80%;
   }
-  .aboutInnerContainer {
-    gap: 47px;
+  .aboutLogo {
+    height: 65px;
   }
 
   .aboutSingleItem {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 30px;
+    /* gap: 30px; */
   }
 }
 
-@media (max-width: 710px) {
+@media (max-width: 830px) {
   .AboutContainer {
-    width: 400px;
-    height: 670px;
-  }
-  .aboutSingleItem {
-    gap: 30px;
-  }
-
-  .noShowAbout {
-    width: 400px;
-    height: 670px;
-  }
-
-  .aboutLogoTitle {
-    font-size: 1.4rem;
-    width: 78%;
-  }
-}
-
-@media (max-width: 605px) {
-  .AboutContainer {
-    width: 370px;
-    height: 650px;
-  }
-
-  .noShowAbout {
-    width: 370px;
-    height: 650px;
-  }
-
-  .aboutLogoTitle {
-    font-size: 1.2rem;
+    width: 480px;
+    height: 690px;
   }
   .aboutInnerContainer {
-    gap: 47px;
+    width: 93%;
   }
-}
 
-@media (max-width: 605px) {
-  .AboutContainer {
-    width: 340px;
+  .aboutLogo {
+    height: 53px;
   }
 
   .noShowAbout {
-    width: 340px;
+    width: 480px;
+    height: 690px;
+  }
+
+  .aboutLogoTitle {
+    font-size: 1.35rem;
+    width: 75%;
   }
 }
 
-@media (max-width: 537px) {
+@media (max-width: 690px) {
   .AboutContainer {
-    width: 300px;
+    width: 395px;
     height: 650px;
   }
 
   .noShowAbout {
-    width: 300px;
+    width: 395px;
     height: 650px;
   }
 
   .aboutLogoTitle {
-    font-size: 1.15rem;
+    font-size: 1.35rem;
+    width: 74%;
+  }
+  .aboutLogo {
+    height: 60px;
+    width: 60px;
   }
 
-  .aboutSingleItem {
-    gap: 20px;
+  .aboutInnerContainer {
+    width: 86%;
+  }
+}
+
+@media (max-width: 570px) {
+  .AboutContainer {
+    width: 300px;
+    /* height: 680px; */
+  }
+
+  .noShowAbout {
+    width: 300px;
+    /* height: 68px; */
+  }
+
+  .aboutLogoTitle {
+    font-size: 1.25rem;
+  }
+  .aboutLogo {
+    height: 46px;
+    width: 50px;
+  }
+
+  .aboutInnerContainer {
+    width: 85%;
   }
 }
 
 @media (max-width: 447px) {
   .AboutContainer {
-    width: 250px;
-    height: 625px;
+    width: 270px;
+    height: 540px;
   }
 
   .noShowAbout {
-    width: 250px;
-    height: 625px;
+    width: 270px;
+    height: 540px;
   }
 
   .aboutLogoTitle {
-    font-size: 1rem;
+    font-size: 0.85rem;
+    width: 71%;
   }
 }
 
@@ -284,17 +285,13 @@
 
   .noShowAbout {
     width: 250px;
-    height: 625px;
+    height: 415px;
   }
 
-  .aboutInnerContainer {
-    gap: 28px;
-  }
   .aboutSingleItem {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 15px;
   }
 
   .aboutLogo {
@@ -305,5 +302,21 @@
   .aboutLogoTitle {
     font-size: 12px;
     max-width: 80%;
+  }
+}
+
+@media (max-width: 380px) {
+  .AboutContainer {
+    width: 240px;
+    height: 440px;
+  }
+
+  .noShowAbout {
+    width: 300px;
+    height: 440px;
+  }
+
+  .aboutLogoTitle {
+    font-size: 0.85rem;
   }
 }
