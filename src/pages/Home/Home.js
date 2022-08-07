@@ -53,8 +53,9 @@ const HomeContainer = () => {
                 const scroller = () => {
                     myProjects.current?.scrollIntoView()
 
-                    scroller()
                 }
+                scroller()
+
             }
 
             scrollChecker.current = true
