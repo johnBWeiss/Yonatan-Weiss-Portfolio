@@ -3,7 +3,7 @@ import videosList from '../../assets/videos/videos'
 import logos from '../../assets/images/logos'
 
 
-import ReactPlayer from "react-player"
+// import ReactPlayer from "react-player"
 import './Projects.css'
 
 const Projects = (upgrades) => {
@@ -28,9 +28,12 @@ const Projects = (upgrades) => {
                     <div className='projectTitle' onClick={() => { projectInfoPopUpHandler(v) }}>{v.title}</div>
 
                     <div className='projectVideoContainer'>
-                        <ReactPlayer url={v.src} playing={true}
+                        <video width="100%" height="100%" controls src={v.src} autoPlay muted>
+                        </video>
+                        {/* <ReactPlayer url={v.src} playing={true}
                             loop={true} controls={true}
-                            muted={true} height={'100%'} ></ReactPlayer></div>
+                            muted={true} height={'100%'} ></ReactPlayer> */}
+                    </div>
                     <div className='logoContainer'>
                         <a
 

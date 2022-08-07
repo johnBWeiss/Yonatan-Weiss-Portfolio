@@ -1,6 +1,5 @@
 import React from 'react'
 import './PopUp.css'
-import ReactPlayer from "react-player"
 
 
 const PopUp = (popUP) => {
@@ -13,9 +12,9 @@ const PopUp = (popUP) => {
                 <div className='popUpTitle'>{content.title}</div>
                 <div className='upperPopUpContent'>
                     <div className='playerContainer'>
-                        <ReactPlayer url={content.src} playing={true}
-                            loop={true} controls={false}
-                            muted={true} height={'100%'} width={'100%'} ></ReactPlayer>
+                        <video width="100%" height="100%" src={content.src} autoPlay muted>
+                        </video>
+
                     </div>
                     <div className='popUpDescription'>
                         {content.description}
