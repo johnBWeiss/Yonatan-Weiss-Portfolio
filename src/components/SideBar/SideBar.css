@@ -217,7 +217,7 @@
   }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1800px) {
   .singleSideBar:hover {
     -webkit-transform: scale(120%);
     -ms-transform: scale(120%);
@@ -226,6 +226,10 @@
     -o-transition: 0.2s;
     transition: 0.2s;
     border-bottom: 1px solid transparent;
+  }
+
+  .sideBarContainer {
+    left: 4%;
   }
 
   .singleSideBar {
@@ -362,12 +366,6 @@
       -webkit-transform: rotate(720deg);
       transform: rotate(720deg);
     }
-  }
-}
-
-@media (max-width: 609px) {
-  .sideBarContainer {
-    left: 4%;
   }
 }
 

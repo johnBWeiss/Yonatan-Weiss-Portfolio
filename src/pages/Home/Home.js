@@ -51,7 +51,6 @@ const HomeContainer = () => {
                 setMyProjectsEffect('showProjects')
                 setShowMore(false)
                 const scroller = () => {
-                    console.log('scroller');
                     myProjects.current?.scrollIntoView()
 
                     scroller()
@@ -82,7 +81,7 @@ const HomeContainer = () => {
         if (
             window?.scrollY
             >=
-            stackRef?.current?.offsetTop || window?.scrollY + window?.innerHeight + 100 >=
+            stackRef?.current?.offsetTop || window?.scrollY + window?.innerHeight + 150 >=
             document?.body?.offsetHeight
         ) {
             setSideBarClass('noShowSideBar')
