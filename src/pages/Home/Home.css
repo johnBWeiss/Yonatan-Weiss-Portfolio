@@ -717,9 +717,15 @@
   }
 }
 
+@media (max-width: 850px) {
+  .titleText {
+    font-size: 8.5rem;
+  }
+}
+
 @media (max-width: 750px) {
   .titleText {
-    font-size: 9rem;
+    font-size: 7rem;
   }
   .profilePic {
     height: 175px;
@@ -827,7 +833,7 @@
 
 @media (max-width: 571px) {
   .titleText {
-    font-size: 85px;
+    font-size: 95px;
   }
   .emptyPersonalMessage {
     font-size: 25px;
