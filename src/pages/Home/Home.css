@@ -843,6 +843,9 @@
 }
 
 @media (max-width: 488px) {
+  .introHeaderContainer {
+    height: 179px;
+  }
   .titleText {
     font-size: 70px;
   }
@@ -898,9 +901,5 @@
   }
   .personalMessage {
     font-size: 15px;
-  }
-
-  .introHeaderContainer {
-    height: 900px;
   }
 }
