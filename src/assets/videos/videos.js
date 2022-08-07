@@ -14,7 +14,7 @@ const videosList = [{ src: cinema, title: 'Cinema', logo: angularLogo, live: tru
 },
 {
     src: Phoogle, title: 'Phoogle', logo: vueLogo, live: false, link: 'https://github.com/johnBWeiss/phoogle---a-visual-search-engine/tree/main/src',
-    description: 'Phoogle is a google search engine clone, with the added functionality of returning not only the links of your search results, but their homepage screenshots as well, enabling an additional visual aid for an improved user experience.'
+    description: 'A search engine clonethat returns both the links of your search results, and their homepage screenshots as well, enabling an additional visual aid for an improved user experience.'
 },
 { src: TITANWAR, title: 'TitanWar', logo: JsLogo, live: false, link: 'https://github.com/johnBWeiss/TITANWAR', description: 'An immersive fantasy themed memory game with animation, sound effects, and an atypical point management system, with the ability to save and display a high score list.' }];
 export default videosList 
