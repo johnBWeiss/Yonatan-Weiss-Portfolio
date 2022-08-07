@@ -81,7 +81,7 @@
   flex-direction: column;
   padding: 6%;
   width: 90%;
-  height: 715px;
+  height: 580px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -96,7 +96,7 @@
 }
 
 .aboutLogo {
-  height: 90px;
+  height: 70px;
   width: 90px;
   -o-object-fit: scale-down;
   object-fit: scale-down;
@@ -318,5 +318,29 @@
 
   .aboutLogoTitle {
     font-size: 0.85rem;
+  }
+}
+
+@media (max-height: 600px) {
+  .AboutContainer {
+    width: 540px;
+    height: 440px;
+  }
+
+  .noShowAbout {
+    width: 300px;
+    height: 440px;
+  }
+
+  .aboutLogoTitle {
+    font-size: 1.1rem;
+  }
+
+  .aboutLogo {
+    height: 40px;
+  }
+
+  .aboutInnerContainer {
+    width: 97%;
   }
 }

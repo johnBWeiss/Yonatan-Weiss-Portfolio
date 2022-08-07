@@ -48,8 +48,8 @@
 .personalMessage {
   font-size: 30px;
   color: white;
-  -webkit-animation: personalMessageOdd 7.5s;
-  animation: personalMessageOdd 7.5s;
+  -webkit-animation: personalMessageOdd 10s;
+  animation: personalMessageOdd 10s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   max-width: 75%;
@@ -58,8 +58,8 @@
 .emptyPersonalMessage {
   font-size: 30px;
   color: white;
-  -webkit-animation: personalMessageEven 7.5s;
-  animation: personalMessageEven 7.5s;
+  -webkit-animation: personalMessageEven 10s;
+  animation: personalMessageEven 10s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   max-width: 75%;

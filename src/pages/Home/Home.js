@@ -29,8 +29,7 @@ const HomeContainer = () => {
     const scrollChecker = useRef(false)
 
     const handleScroll = () => {
-        // const position = window.pageYOffset;
-        // setScrollPosition(position);
+
 
         if (
             window?.scrollY - 2 <=
@@ -103,7 +102,7 @@ const HomeContainer = () => {
         const interval = setInterval(() => {
             setCount((prevCount) => prevCount + 1)
             setOpeningTextClass((prevClass) => !prevClass)
-        }, 7500);
+        }, 10000);
 
         return () => clearInterval(interval);
     }, []);

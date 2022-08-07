@@ -162,3 +162,9 @@
     height: 18px;
   }
 }
+
+@media (max-height: 600px) {
+  .myStackInnerContainer {
+    width: 73%;
+  }
+}
