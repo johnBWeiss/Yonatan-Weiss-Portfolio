@@ -44,11 +44,19 @@ const HomeContainer = () => {
             ArrowRef?.current?.offsetTop
 
         ) {
+
+            setSideBarClass('sideBarContainer')
+
             if (!scrollChecker.current) {
                 setShowProjects(true)
                 setMyProjectsEffect('showProjects')
                 setShowMore(false)
-                setSideBarClass('sideBarContainer')
+                // const scroller = () => {
+                //     console.log('scroller');
+                //     myProjects.current?.scrollIntoView()
+
+                //     scroller()
+                // }
             }
 
             scrollChecker.current = true
