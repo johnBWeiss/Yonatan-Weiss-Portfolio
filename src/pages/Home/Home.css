@@ -718,6 +718,9 @@
 }
 
 @media (max-width: 750px) {
+  .titleText {
+    font-size: 9rem;
+  }
   .profilePic {
     height: 175px;
   }

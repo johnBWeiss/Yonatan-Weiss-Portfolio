@@ -199,7 +199,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   @keyframes sideBarLogo {
     0% {
       height: 0px;
@@ -210,11 +210,11 @@
       transform: rotate(0deg);
     }
     80% {
-      height: 40px;
+      height: 50px;
       transform: rotate(720deg);
     }
     100% {
-      height: 40px;
+      height: 50px;
       transform: rotate(720deg);
     }
   }
@@ -227,17 +227,17 @@
     }
 
     50% {
-      height: 330px;
+      height: 530px;
       transform: translateX(-30%);
     }
     100% {
       transform: translateX(0);
-      height: 330px;
+      height: 530px;
     }
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   @keyframes sideBarLogo {
     0% {
       height: 0px;
@@ -248,16 +248,16 @@
       transform: rotate(0deg);
     }
     80% {
-      height: 28px;
+      height: 40px;
       transform: rotate(720deg);
     }
     100% {
-      height: 28px;
+      height: 40px;
       transform: rotate(720deg);
     }
   }
 
-  @keyframes sideBar {
+  /* @keyframes sideBar {
     0% {
       height: 0px;
       width: 20px;
@@ -272,5 +272,5 @@
       transform: translateX(0);
       height: 300px;
     }
-  }
+  } */
 }
