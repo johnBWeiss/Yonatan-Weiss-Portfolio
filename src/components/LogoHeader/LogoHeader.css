@@ -57,12 +57,11 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: space-between;
-  /* gap: 70px; */
   min-width: 60%;
 }
 
 .headerLogo {
-  height: 72px;
+  height: 75px;
   -webkit-animation: rocked 0.9s linear 1.25s 1 none,
     logoRoll 1.2s linear 0s 1 none;
   animation: rocked 0.9s linear 1.25s 1 none, logoRoll 1.2s linear 0s 1 none;
@@ -176,7 +175,7 @@
   }
 
   .logoContainerHeader {
-    min-width: 80%;
+    min-width: 85%;
   }
 }
 @media (max-width: 695px) {
@@ -188,9 +187,6 @@
     -webkit-animation: rocked 0.7s linear 0.8s 1 none,
       logoRoll 0.9s linear 0s 1 none;
     animation: rocked 0.7s linear 0.8s 1 none, logoRoll 0.9s linear 0s 1 none;
-  }
-  .logoContainerHeader {
-    gap: 40px;
   }
 }
 
