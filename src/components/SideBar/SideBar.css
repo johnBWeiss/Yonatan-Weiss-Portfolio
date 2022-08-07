@@ -11,7 +11,7 @@
   padding-bottom: 2.5%;
   justify-content: space-between;
   position: fixed;
-  bottom: 8%;
+  bottom: 12%;
   left: 8%;
   animation: sideBar 1s linear 0s 1 forwards;
 }
@@ -227,12 +227,12 @@
     }
 
     50% {
-      height: 530px;
+      height: 395px;
       transform: translateX(-30%);
     }
     100% {
       transform: translateX(0);
-      height: 530px;
+      height: 395px;
     }
   }
 }
@@ -248,11 +248,11 @@
       transform: rotate(0deg);
     }
     80% {
-      height: 40px;
+      height: 35px;
       transform: rotate(720deg);
     }
     100% {
-      height: 40px;
+      height: 35px;
       transform: rotate(720deg);
     }
   }
