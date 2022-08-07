@@ -24,9 +24,10 @@
 
   70% {
     transform: translateX(0);
+    opacity: 0.3;
   }
   87% {
-    transform: translateX(2%);
+    transform: translateX(0.5%);
   }
 
   100% {
