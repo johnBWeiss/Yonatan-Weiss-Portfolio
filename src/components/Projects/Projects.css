@@ -203,6 +203,9 @@
   .logo {
     height: 60px;
   }
+  .projectTitle {
+    font-size: 81px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -243,7 +246,7 @@
   }
 
   .projectTitle {
-    font-size: 70px;
+    font-size: 63px;
     margin-top: 1%;
   }
 }
@@ -302,7 +305,7 @@
   }
 
   .projectTitle {
-    font-size: 62px;
+    font-size: 58px;
   }
   .frameworkLogoContainer {
     top: -8.3%;
@@ -324,7 +327,7 @@
   }
 
   .projectTitle {
-    font-size: 58px;
+    font-size: 50px;
   }
   .frameworkLogoContainer {
     top: -7.3%;
