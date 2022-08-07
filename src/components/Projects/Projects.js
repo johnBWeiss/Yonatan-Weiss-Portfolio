@@ -17,15 +17,15 @@ const Projects = (upgrades) => {
     return (
         <div className='projectGalleryContainer'>
             {videosList.map((v) => (
-                <div className='singleItem' key={v.title}>
+                <div className='singleItem' key={v.title} >
                     <div className='frameworkLogoContainer'>
                         <img
                             className='frameworkLogo'
                             src={v.logo}
                             title={v.title}
-
+                            onClick={() => { projectInfoPopUpHandler(v) }}
                             alt="github" /></div>
-                    <div className='projectTitle'>{v.title}</div>
+                    <div className='projectTitle' onClick={() => { projectInfoPopUpHandler(v) }}>{v.title}</div>
 
                     <div className='projectVideoContainer'>
                         <ReactPlayer url={v.src} playing={true}
