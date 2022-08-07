@@ -12,7 +12,6 @@ import PopUp from "../../components/PopUp/PopUp";
 
 const HomeContainer = () => {
 
-    // const [scrollPosition, setScrollPosition] = useState(0);
     const [showProjects, setShowProjects] = useState(false);
     const [showMore, setShowMore] = useState(true);
     const [myProjectsEffect, setMyProjectsEffect] = useState('noShowProjects');
@@ -27,6 +26,7 @@ const HomeContainer = () => {
     const stackRef = useRef(null)
     const AboutRef = useRef(null)
     const ArrowRef = useRef(null)
+    const scrollChecker = useRef(false)
 
     const handleScroll = () => {
         // const position = window.pageYOffset;
@@ -44,13 +44,19 @@ const HomeContainer = () => {
             ArrowRef?.current?.offsetTop
 
         ) {
-            setShowProjects(true)
-            setMyProjectsEffect('showProjects')
-            setShowMore(false)
-            setSideBarClass('sideBarContainer')
+            if (!scrollChecker.current) {
+                setShowProjects(true)
+                setMyProjectsEffect('showProjects')
+                setShowMore(false)
+                setSideBarClass('sideBarContainer')
+            }
+
+            scrollChecker.current = true
+
 
         }
         else {
+            scrollChecker.current = false
             setShowProjects(false)
             setShowMore(true)
             setSideBarClass('noShowSideBar')
