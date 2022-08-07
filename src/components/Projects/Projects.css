@@ -324,6 +324,7 @@
   .singleItem {
     width: 240px;
     height: 390px;
+    border-radius: 35px;
   }
 }
 

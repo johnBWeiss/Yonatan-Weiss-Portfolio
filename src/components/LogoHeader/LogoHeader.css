@@ -175,7 +175,7 @@
   }
 
   .logoContainerHeader {
-    min-width: 85%;
+    min-width: 93%;
   }
 }
 @media (max-width: 695px) {
@@ -196,6 +196,7 @@
     animation: slideInFromLeft 0.6s ease-in 0s 1 none;
   }
   .headerLogo {
+    height: 55px;
     -webkit-animation: rocked 0.7s linear 0.55s 1 none,
       logoRoll 0.5s linear 0s 1 none;
     animation: rocked 0.7s linear 0.55s 1 none, logoRoll 0.5s linear 0s 1 none;
@@ -223,18 +224,6 @@
 
 @media (max-width: 442px) {
   .logoContainerHeader {
-    gap: 26px;
-  }
-}
-
-@media (max-width: 390px) {
-  .logoContainerHeader {
-    gap: 22px;
-  }
-}
-
-@media (max-width: 355px) {
-  .logoContainerHeader {
-    gap: 18px;
+    max-width: 85%;
   }
 }
