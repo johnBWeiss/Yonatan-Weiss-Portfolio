@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 .projectGalleryContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,13 +30,13 @@
   flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-shadow: 0px 16px 20px #00000029;
   box-shadow: 0px 16px 20px #00000029;
-  padding-bottom: 80px;
+  height: 450px;
   width: 350px;
   background-image: url("../../assets/images/projBackground.jpg");
   margin-bottom: 8%;
@@ -52,8 +45,6 @@
 .projectTitle {
   color: white;
   text-align: center;
-  position: relative;
-  top: 41px;
   font-size: 60px;
   word-break: break-all;
   font-family: "Keania One", cursive;
@@ -61,8 +52,9 @@
 
 .frameworkLogoContainer {
   position: relative;
-  top: -27%;
+  top: -8%;
   border-radius: 50%;
+  margin-bottom: -10%;
 }
 .frameworkLogo {
   height: 70px;
@@ -77,8 +69,8 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   min-width: 60%;
-  position: relative;
-  bottom: -35px;
+  /* position: relative;
+  bottom: -35px; */
 }
 .logo {
   height: 40px;
@@ -103,9 +95,19 @@
   cursor: pointer;
 }
 
+.projectVideoContainer {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  height: 49%;
+}
+
 @media (max-width: 1136px) {
   .projectGalleryContainer {
-    gap: 70px 0px;
+    /* gap: 70px 0px; */
     width: 800px;
     padding-bottom: 63px;
   }
@@ -118,29 +120,41 @@
 }
 
 @media (max-width: 992px) {
+  .projectVideoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 41%;
+    margin-bottom: 12%;
+  }
+  .HomeContainer {
+    max-width: 65%;
+  }
   .projectGalleryContainer {
     width: 100%;
-    gap: 161px 0px;
+    /* gap: 161px 0px; */
     margin-top: 15%;
   }
 
   .singleItem {
-    width: 100%;
-    height: 800px;
+    width: 95%;
+    height: 850px;
     border-radius: 100px;
+    margin-bottom: 28%;
   }
 
   .projectTitle {
-    top: 85px;
     font-size: 88px;
+    margin-top: -5%;
   }
 
   .logoContainer {
-    bottom: -65px;
+    margin-bottom: 8%;
   }
 
   .frameworkLogoContainer {
-    top: -28%;
+    top: -9.8%;
+    /* margin-bottom: -20%; */
   }
 
   .frameworkLogo {
@@ -152,6 +166,59 @@
   }
 }
 
+@media (max-width: 895px) {
+  .singleItem {
+    width: 550px;
+    height: 750px;
+    border-radius: 100px;
+    margin-bottom: 28%;
+  }
+
+  .frameworkLogo {
+    height: 125px;
+  }
+
+  .frameworkLogoContainer {
+    top: -8.8%;
+    /* margin-bottom: -20%; */
+  }
+
+  .logo {
+    height: 68px;
+  }
+}
+@media (max-width: 865px) {
+  .singleItem {
+    width: 500px;
+    height: 750px;
+    border-radius: 100px;
+    margin-bottom: 28%;
+  }
+}
+
+@media (max-width: 762px) {
+  .singleItem {
+    width: 450px;
+    height: 700px;
+    border-radius: 75px;
+    margin-bottom: 28%;
+  }
+  .logo {
+    height: 60px;
+  }
+}
+
+@media (max-width: 720px) {
+  .singleItem {
+    width: 75%;
+    height: 700px;
+    border-radius: 75px;
+    margin-bottom: 28%;
+  }
+  .logo {
+    height: 60px;
+  }
+}
 @media (max-width: 600px) {
   .projectGalleryContainer {
     width: 380px;
@@ -210,7 +277,7 @@
     flex-wrap: wrap;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    gap: 90px 0px;
+    /* gap: 90px 0px; */
     max-width: 850px;
     padding-top: 12px;
     padding-bottom: 80px;

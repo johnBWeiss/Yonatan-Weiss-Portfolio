@@ -454,7 +454,7 @@
   -ms-flex-pack: center;
   justify-content: space-between;
   width: 70%;
-  max-width: 1400px;
+  max-width: 900px;
   /* gap: 30px; */
 }
 
@@ -843,6 +843,9 @@
 }
 
 @media (max-width: 488px) {
+  .profilePic {
+    height: 101px;
+  }
   .introHeaderContainer {
     height: 179px;
   }

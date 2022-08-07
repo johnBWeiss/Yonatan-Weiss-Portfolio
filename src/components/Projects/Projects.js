@@ -18,7 +18,6 @@ const Projects = (upgrades) => {
         <div className='projectGalleryContainer'>
             {videosList.map((v) => (
                 <div className='singleItem' key={v.title}>
-                    <div className='projectTitle'>{v.title}</div>
                     <div className='frameworkLogoContainer'>
                         <img
                             className='frameworkLogo'
@@ -26,9 +25,12 @@ const Projects = (upgrades) => {
                             title={v.title}
 
                             alt="github" /></div>
-                    <ReactPlayer url={v.src} playing={true}
-                        loop={true} controls={true}
-                        muted={true} width={'100%'} ></ReactPlayer>
+                    <div className='projectTitle'>{v.title}</div>
+
+                    <div className='projectVideoContainer'>
+                        <ReactPlayer url={v.src} playing={true}
+                            loop={true} controls={true}
+                            muted={true} height={'100%'} ></ReactPlayer></div>
                     <div className='logoContainer'>
                         <a
 
