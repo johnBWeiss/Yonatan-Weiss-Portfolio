@@ -157,9 +157,15 @@
     height: 20px;
   }
 }
-@media (max-width: 48px) {
+@media (max-width: 480px) {
   .stackLogo {
     height: 18px;
+  }
+  .myStackInnerContainer {
+    width: 80%;
+  }
+  .logoContainerHeader {
+    min-width: 84%;
   }
 }
 

@@ -81,7 +81,7 @@
   flex-direction: column;
   padding: 6%;
   width: 90%;
-  height: 580px;
+  height: 650px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -153,7 +153,6 @@
   }
 
   .aboutLogoTitle {
-    font-size: 2.2rem;
     width: 80%;
   }
 }
@@ -161,14 +160,14 @@
 @media (max-width: 969px) {
   .AboutContainer {
     width: 600px;
-    height: 800px;
+    height: 734px;
     padding-top: 2%;
     padding-bottom: 2%;
   }
 
   .noShowAbout {
     width: 600px;
-    height: 800px;
+    height: 734px;
   }
 
   .aboutLogoTitle {
