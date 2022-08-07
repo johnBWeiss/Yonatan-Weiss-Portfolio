@@ -1,50 +1,104 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .myStackContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   margin-bottom: 5%;
 }
 
 .myStackInnerContainer {
-  width: 60%;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: space-between;
   padding-top: 3%;
   padding-bottom: 3%;
-  gap: 10px;
 }
 
 .stackLogo {
   height: 60px;
+  -o-object-fit: scale-down;
   object-fit: scale-down;
 }
 
 .singleStack {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  gap: 10px;
   background-image: url("../../assets/images/projBackground.jpg");
   padding: 2%;
   border-radius: 20%;
+  height: 90px;
 }
 
-@keyframes singleStack {
+@-webkit-keyframes singleStack {
   0% {
+    -webkit-transform: translatey(30);
     transform: translatey(30);
   }
   40% {
     opacity: 1;
   }
   50% {
+    -webkit-transform: translatey(-50%);
     transform: translatey(-50%);
     opacity: 0.75;
+    -webkit-box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 5px gold, 0 0 10px gold,
+      0 0 10px #0ba9ca, 0 0 50px gold;
     box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 5px gold, 0 0 10px gold,
       0 0 10px #0ba9ca, 0 0 50px gold;
   }
 
   100% {
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+@keyframes singleStack {
+  0% {
+    -webkit-transform: translatey(30);
+    transform: translatey(30);
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translatey(-50%);
+    transform: translatey(-50%);
+    opacity: 0.75;
+    -webkit-box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 5px gold, 0 0 10px gold,
+      0 0 10px #0ba9ca, 0 0 50px gold;
+    box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 5px gold, 0 0 10px gold,
+      0 0 10px #0ba9ca, 0 0 50px gold;
+  }
+
+  100% {
+    -webkit-transform: translatey(0);
     transform: translatey(0);
     opacity: 1;
   }
@@ -54,9 +108,29 @@
   color: white;
 }
 
+@media (max-width: 1300px) {
+  .myStackInnerContainer {
+    width: 90%;
+  }
+}
+@media (max-width: 1050px) {
+  .myStackInnerContainer {
+    width: 90%;
+  }
+  .stackTitle {
+    font-size: 0px;
+  }
+  .singleStack {
+    height: fit-content;
+  }
+  .stackLogo {
+    height: 50px;
+  }
+}
 @media (max-width: 942px) {
   .stackLogo {
     height: 50px;
+    -o-object-fit: scale-down;
     object-fit: scale-down;
   }
 }
@@ -76,14 +150,6 @@
   .stackLogo {
     height: 40px;
   }
-
-  .stackTitle {
-    font-size: 0px;
-  }
-
-  .singleStack {
-    gap: 0px;
-  }
 }
 
 @media (max-width: 643px) {
@@ -91,21 +157,13 @@
     height: 26px;
   }
 }
-
-@media (max-width: 550px) {
-  .myStackInnerContainer {
-    gap: 5px;
-  }
-}
-
-@media (max-width: 412px) {
-  .myStackInnerContainer {
-    gap: 3px;
-  }
-}
-
-@media (max-width: 374px) {
+@media (max-width: 543px) {
   .stackLogo {
-    height: 22px;
+    height: 20px;
+  }
+}
+@media (max-width: 48px) {
+  .stackLogo {
+    height: 18px;
   }
 }
