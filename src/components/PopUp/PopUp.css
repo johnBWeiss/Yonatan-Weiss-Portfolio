@@ -22,6 +22,17 @@
   -webkit-animation: popdown 0.5s linear 0s 1 forwards;
   animation: popdown 0.5s linear 0s 1 forwards;
 }
+
+.X {
+  color: goldenrod;
+  position: fixed;
+  left: 8%;
+  top: 3%;
+  height: 90px;
+  width: 40px;
+  object-fit: scale-down;
+}
+
 @-webkit-keyframes popdown {
   0% {
     -webkit-transform: translatey(-100%);

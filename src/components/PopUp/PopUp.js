@@ -1,6 +1,8 @@
 import React from 'react'
 import './PopUp.css'
 
+import X from '../../assets/images/logos/x.png'
+
 
 const PopUp = (popUP) => {
     const { fathershowPopUpHandler, content } = popUP
@@ -9,6 +11,8 @@ const PopUp = (popUP) => {
     return (
         <div className='popUp' onClick={showPopUpHandler}>
             <div className='popUpInnerContainer'>
+                <img className='X' src={X} alt='X' />
+
                 <div className='popUpTitle'>{content.title}</div>
                 <div className='upperPopUpContent'>
                     <div className='playerContainer'>
