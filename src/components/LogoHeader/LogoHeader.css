@@ -61,7 +61,7 @@
 }
 
 .headerLogo {
-  height: 75px;
+  height: 55px;
   -webkit-animation: rocked 0.9s linear 1.25s 1 none,
     logoRoll 1.2s linear 0s 1 none;
   animation: rocked 0.9s linear 1.25s 1 none, logoRoll 1.2s linear 0s 1 none;

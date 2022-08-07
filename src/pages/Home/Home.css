@@ -836,15 +836,18 @@
     font-size: 95px;
   }
   .emptyPersonalMessage {
-    font-size: 25px;
+    font-size: 23px;
   }
   .personalMessage {
-    font-size: 25px;
+    font-size: 23px;
   }
   .profilePic {
     height: 110px;
   }
 
+  .introInnerHeaderContainer {
+    width: 91%;
+  }
   .titleInnerFlex {
     padding-bottom: 18%;
     margin-top: 6%;
