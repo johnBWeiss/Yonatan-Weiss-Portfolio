@@ -319,7 +319,7 @@
     font-size: 0.85rem;
   }
 }
-
+/* 
 @media (max-height: 600px) {
   .AboutContainer {
     width: 540px;
@@ -342,4 +342,4 @@
   .aboutInnerContainer {
     width: 97%;
   }
-}
+} */
