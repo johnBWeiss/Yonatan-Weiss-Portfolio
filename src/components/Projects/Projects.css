@@ -398,7 +398,7 @@
   }
 }
 
-@media (max-height: 600px) {
+@media (max-height: 400px) {
   .projectGalleryContainer {
     max-width: 583px;
   }
