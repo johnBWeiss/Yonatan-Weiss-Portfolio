@@ -26,8 +26,8 @@
 .X {
   color: goldenrod;
   position: fixed;
-  left: 8%;
-  top: 3%;
+  left: 30px;
+  top: 5px;
   height: 90px;
   width: 40px;
   object-fit: scale-down;
