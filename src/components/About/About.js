@@ -14,6 +14,7 @@ const About = ({ refContainer }) => {
                         className='aboutLogo'
                         src={v.src}
                         alt='location'
+                        title='logo'
                     />
                     <div className='aboutLogoTitle'>{v.title}</div>
                 </div>))}
