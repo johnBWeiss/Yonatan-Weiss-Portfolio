@@ -120,8 +120,8 @@ const HomeContainer = () => {
             <div className='HomeContainer'>
                 <div className='titleInnerFlex'>
                     <div className='HomeTitleOverlay'>
-                        <div className='HomeTitleTextTop'>Hi, I am Yonatan,</div>
-                        <div className='HomeTitleTextBottom'>a Full Stack Developer</div>
+                        <div className='HomeTitleTextTop'>Hi, I am Yonatan</div>
+                        <div className='HomeTitleTextBottom'>Full Stack Developer</div>
 
                     </div>
                 </div>
