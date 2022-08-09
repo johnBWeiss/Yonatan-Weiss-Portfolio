@@ -30,15 +30,9 @@ const Projects = (upgrades) => {
 
                     <div className='projectVideoContainer'>
                         <video width="100%" height="100%" controls poster="../../assets/images/bannerBackground.jpg"
-                            //  src={v.src}
-                            autoPlay loop playsInline muted>
-
-                            <source src={v.src} />
-                            <source src={defaultVideo} />
+                            src={v.src} autoPlay loop playsInline muted>
                         </video>
-                        {/* <ReactPlayer url={v.src} playing={true}
-                            loop={true} controls={true}
-                            muted={true} height={'100%'} ></ReactPlayer> */}
+
                     </div>
                     <div className='logoContainer'>
                         <a
