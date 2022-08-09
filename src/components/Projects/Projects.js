@@ -1,6 +1,7 @@
 import React from 'react'
 import videosList from '../../assets/videos/videos'
 import logos from '../../assets/images/logos'
+import defaultVideo from '../../assets/videos/Cinema.mov'
 
 
 // import ReactPlayer from "react-player"
@@ -28,7 +29,12 @@ const Projects = (upgrades) => {
                     <div className='projectTitle' onClick={() => { projectInfoPopUpHandler(v) }}>{v.title}</div>
 
                     <div className='projectVideoContainer'>
-                        <video width="100%" height="100%" controls poster="../../assets/images/bannerBackground.jpg" src={v.src} autoPlay loop playsInline muted>
+                        <video width="100%" height="100%" controls poster="../../assets/images/bannerBackground.jpg"
+                            //  src={v.src}
+                            autoPlay loop playsInline muted>
+
+                            <source src={v.src} />
+                            <source src={defaultVideo} />
                         </video>
                         {/* <ReactPlayer url={v.src} playing={true}
                             loop={true} controls={true}
