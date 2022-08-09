@@ -256,7 +256,7 @@
   }
 }
 
-@media (max-height: 500px) {
+@media (max-height: 400px) {
   .popUpDescription {
     font-size: 0.7rem;
     line-height: 18px;
