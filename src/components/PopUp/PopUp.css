@@ -106,13 +106,14 @@
 
 .popUpDescription {
   color: white;
-  font-size: 1.6em;
+  font-size: 2em;
+
   text-align: left;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
   width: 47%;
-  line-height: 33px;
+  line-height: 71px;
 }
 .popUpTitle {
   font-size: 8rem;
@@ -128,21 +129,24 @@
 @media (max-width: 1476px) {
   .popUpDescription {
     font-size: 1.4rem;
+    line-height: 40px;
+    /* margin-top: 5%; */
   }
 }
 
-@media (max-width: 1276px) {
+@media (max-width: 1376px) {
   .popUpTitle {
     margin-bottom: 2%;
     margin-top: 5%;
   }
+
   .popUpDescription {
     font-size: 1.6rem;
-    width: 100%;
+    width: 70%;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
-    margin: 5%;
+    margin-top: 5%;
   }
 
   .upperPopUpContent {
@@ -154,7 +158,8 @@
   }
 
   .playerContainer {
-    width: 100%;
+    width: 70%;
+
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
@@ -176,26 +181,33 @@
 @media (max-width: 800px) {
   .upperPopUpContent {
     width: 80%;
-    gap: 40px;
   }
 
   .popUpTitle {
-    font-size: 6rem;
+    font-size: 8rem;
   }
 
   .popUpDescription {
     font-size: 1.2rem;
     width: 95%;
   }
+  .playerContainer {
+    width: 100%;
+  }
 }
 @media (max-width: 640px) {
   .popUpInnerContainer {
     width: 97%;
   }
+  .popUpTitle {
+    font-size: 5.5rem;
+  }
+  .popUpDescription {
+    margin-top: 7%;
+  }
 
   .upperPopUpContent {
     width: 63%;
-    /* gap: 22px; */
   }
 }
 
@@ -206,7 +218,10 @@
 
   .popUpDescription {
     font-size: 1.1rem;
-    margin-top: 4%;
+  }
+
+  .popUpTitle {
+    font-size: 5rem;
   }
 }
 
@@ -216,7 +231,7 @@
   }
 
   .popUpTitle {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
@@ -226,22 +241,21 @@
   }
 }
 
-@media (max-height: 800px) {
+@media (max-height: 700px) {
   .popUpDescription {
     font-size: 1rem;
   }
 
   .popUpTitle {
-    font-size: 5rem;
+    font-size: 4.2rem;
   }
 
   .upperPopUpContent {
-    width: 58%;
-    gap: 22px;
+    width: 68%;
   }
 }
 
-@media (max-height: 600px) {
+@media (max-height: 650px) {
   .popUpDescription {
     font-size: 0.7rem;
   }
@@ -252,7 +266,6 @@
 
   .upperPopUpContent {
     width: 60%;
-    gap: 22px;
   }
 }
 
@@ -268,6 +281,5 @@
 
   .upperPopUpContent {
     width: 30%;
-    gap: 20px;
   }
 }
