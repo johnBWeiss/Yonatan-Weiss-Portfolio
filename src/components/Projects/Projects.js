@@ -28,7 +28,7 @@ const Projects = (upgrades) => {
                     <div className='projectTitle' onClick={() => { projectInfoPopUpHandler(v) }}>{v.title}</div>
 
                     <div className='projectVideoContainer'>
-                        <video width="100%" height="100%" controls src={v.src} autoPlay loop playsinline muted>
+                        <video width="100%" height="100%" controls src={v.src} autoPlay loop playsInline muted>
                         </video>
                         {/* <ReactPlayer url={v.src} playing={true}
                             loop={true} controls={true}
