@@ -16,7 +16,7 @@ const PopUp = (popUP) => {
                 <div className='popUpTitle'>{content.title}</div>
                 <div className='upperPopUpContent'>
                     <div className='playerContainer'>
-                        <video width="100%" height="100%" src={content.src} autoPlay muted>
+                        <video width="100%" height="100%" src={content.src} autoPlay muted playsInline>
                         </video>
 
                     </div>
