@@ -1,4 +1,4 @@
-Have a look at my latest projects and info in my React built Portfolio.
+Have a look at my latest projects and info in my React-built Portfolio.
 
 check out the site live here:
 
