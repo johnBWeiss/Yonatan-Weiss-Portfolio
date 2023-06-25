@@ -9,8 +9,6 @@ const MyStack = () => {
 
     const logoArray = [react, vue, vuetify, git, mongo, css, html, redux, JS]
     return (
-
-
         <div className='myStackContainer'>
             <div className='myStackInnerContainer'>
                 {logoArray.map((v, i) => (<div className='singleStack' key={v.src} style={{ animation: `singleStack 1s linear ${i / 1.1}s infinite forwards` }

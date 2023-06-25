@@ -21,7 +21,7 @@ const videosList = [
     {
         src: Gamin, title: 'Gamin', logo: reactLogo, img: gaminImg,
         live: true, link: 'https://github.com/johnBWeiss/Gamin/tree/main/src',
-        domain: 'https://gamin-yonatan-weiss-one-bi.netlify.app/',
+        domain: 'https://gamin-yonatan-weiss.netlify.app/',
         description: `Find the best free-to-play games!
 Search by categories, or browse through the entire list sorted by the latest release date.
 Happy Gamin'!`
