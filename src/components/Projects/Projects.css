@@ -107,6 +107,10 @@
   height: 49%;
 }
 
+.projectVideoContainer img{
+  object-fit: cover;
+}
+
 @media (max-width: 1136px) {
   .projectGalleryContainer {
     width: 800px;

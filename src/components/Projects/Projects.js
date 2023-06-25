@@ -30,8 +30,9 @@ const Projects = (upgrades) => {
                         {/* <video width="100%" height="100%" controls='true' poster="../../assets/images/bannerBackground.jpg"
                             src={v.src} autoPlay loop playsInline muted type='video/mp4'>
                         </video> */}
-                        <img src={v.img}
-                            
+                        <img src={v.img} alt={v.title}
+                            onClick={() => { projectInfoPopUpHandler(v) }}
+
                             width={'100%'} />
 
 
