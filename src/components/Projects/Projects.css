@@ -40,6 +40,14 @@
   margin-bottom: 8%;
 }
 
+.singleItem:hover{
+      transform: scale(1.02);
+        -webkit-box-shadow: 0px 0px 30px 8px white;
+    box-shadow: 0px 5px 0px 5px white;
+      
+
+}
+
 .projectTitle {
   color: white;
   text-align: center;
