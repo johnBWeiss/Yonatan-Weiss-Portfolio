@@ -25,6 +25,12 @@ const videosList = [
         description: `Find the best free-to-play games!
 Search by categories, or browse through the entire list sorted by the latest release date.
 Happy Gamin'!`
+    }, {
+        src: LearnAI, title: 'Learn AI', logo: reactLogo, img: LearnAIimg,
+        live: true, link: 'https://github.com/johnBWeiss/Learn-AI/tree/main/src',
+        domain: 'https://learn-ai-optimize-developers.netlify.app/',
+        description: `An enterprise-level onboarding tool for junior developers, designed to optimize the efficiency
+         of newly recruited team members.`
     },
     {
         img: phoogleImg, src: Phoogle, title: 'Phoogle', logo: vueLogo,
@@ -37,12 +43,6 @@ Happy Gamin'!`
         img: titanWArImg, src: TITANWAR, title: 'TitanWar', logo: JsLogo,
         live: false, link: 'https://github.com/johnBWeiss/TITANWAR',
         description: 'An immersive fantasy themed memory game with animation, sound effects, and an atypical point management system, with the ability to save and display a high score list.'
-    }, {
-        src: LearnAI, title: 'Learn AI', logo: reactLogo, img: LearnAIimg,
-        live: true, link: 'https://github.com/johnBWeiss/Learn-AI/tree/main/src',
-        domain: 'https://learn-ai-optimize-developers.netlify.app/',
-        description: `An enterprise-level onboarding tool for junior developers, designed to optimize the efficiency
-         of newly recruited team members.`
     },
     {
         src: cinema, title: 'Cinema', logo: angularLogo, img: CinemaImg,
