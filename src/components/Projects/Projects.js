@@ -27,9 +27,13 @@ const Projects = (upgrades) => {
                     <div className='projectTitle' onClick={() => { projectInfoPopUpHandler(v) }}>{v.title}</div>
 
                     <div className='projectVideoContainer'>
-                        <video width="100%" height="100%" controls='true' poster="../../assets/images/bannerBackground.jpg"
+                        {/* <video width="100%" height="100%" controls='true' poster="../../assets/images/bannerBackground.jpg"
                             src={v.src} autoPlay loop playsInline muted type='video/mp4'>
-                        </video>
+                        </video> */}
+                        <img src={v.img}
+                            
+                            width={'100%'} />
+
 
                     </div>
                     <div className='logoContainer'>

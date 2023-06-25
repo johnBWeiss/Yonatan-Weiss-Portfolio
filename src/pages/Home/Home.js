@@ -39,7 +39,7 @@ const HomeContainer = () => {
             setShowMore(true)
         }
         if (
-            window?.scrollY >=
+           ( window?.scrollY+30) >=
             ArrowRef?.current?.offsetTop
 
         ) {
