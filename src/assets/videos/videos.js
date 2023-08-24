@@ -14,9 +14,11 @@ import gaminImg from "../../assets/images/gaminImg.png"
 import LearnAIimg from "../../assets/images/learnAI.png"
 import CinemaImg from "../../assets/images/cinemaImg.png"
 import musixxImg from "../../assets/images/musixxImg.png"
+import weatherNinja from "../../assets/images/weatherNinja.png"
 
 
 const videosList = [
+
 
     {
         src: Gamin, title: 'Gamin', logo: reactLogo, img: gaminImg,
@@ -31,6 +33,13 @@ Happy Gamin'!`
         domain: 'https://learn-ai-optimize-developers.netlify.app/',
         description: `An enterprise-level onboarding tool for junior developers, designed to optimize the efficiency
          of newly recruited team members.`
+    },
+    {
+        src: weatherNinja, title: 'Weather', logo: reactLogo, img: weatherNinja,
+        live: true, link: 'https://github.com/johnBWeiss/weather-ninja',
+        domain: 'https://yonatan-weiss-25-07-2023.netlify.app/',
+        description: `Awesome weather app!
+    Find the weather in any city in the world, toggle degree or theme mode, save your favorites, and more `
     },
     {
         img: phoogleImg, src: Phoogle, title: 'Phoogle', logo: vueLogo,

@@ -22,11 +22,8 @@ import hardworker from '../../assets/images/logos/hardworker.png'
 import building from '../../assets/images/logos/building.png'
 import responsive from '../../assets/images/logos/responsive.png'
 import developer from '../../assets/images/logos/developer.png'
-import YCV from '../../assets/CV - Yonatan Weiss FE developer.pdf'
+import YCV from '../../assets/CV Yonatan - Experienced Front End Developer.pdf'
 import projects from '../../assets/images/logos/projects.png'
-
-
-
 
 
 
